@@ -1,13 +1,32 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<!--pages/post_invitation/post_invitation.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">POI 名字</view>
+    <view class="page__desc">地址信息</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="page__bd">
+    <view class="weui-cell weui-cell_input weui-cells_after-title">
+      <view class="weui-cell__hd">
+        <view class="weui-label">日期</view>
+      </view>
+      <view class="weui-cell__bd input_date_time">
+        <picker mode="date" value="{{date}}" start="2015-09-01 09:01" end="2022-09-01 21:01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+         <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+          <view class="weui-input">{{time}}</view>
+        </picker>
+        <view>{{day==""?'':'星期'+day}}</view>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">主题</view>
+      </view>
+      <view class="weui-cell__bd">
+       <view class="weui-label">约饭</view>
+      </view>
+    </view>
   </view>
 </view>
