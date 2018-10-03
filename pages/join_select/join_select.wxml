@@ -1,2 +1,12 @@
-<!--pages/join_select/join_select.wxml-->
-<text>pages/join_select/join_select.wxml</text>
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Gallery</view>
+        <view class="page__desc">请选择您加入后的状态，默认为待定</view>
+    </view>
+         <view class="button-sp-area">
+            <button class="weui-btn btn_theme_red" type="primary" plain="true">确定参加</button>
+            <button class="weui-btn btn_theme_red" type="primary" plain="true">场外支持</button>
+            <button class="weui-btn btn_theme_red" type="primary" plain="true">待定</button>
+            <button class="weui-btn btn_theme_red btn_login_out" type="primary" plain="true">退出参与</button>
+        </view>
+</view>
