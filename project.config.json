@@ -33,7 +33,7 @@
 			"list": [
         {
           "id": 0,
-          "name": "join_select",
+          "name": "参与选项",
           "pathName": "pages/join_select/join_select",
           "query": "scene=authorId,546",
           "scene": "1048"
