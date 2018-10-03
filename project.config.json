@@ -37,6 +37,13 @@
           "pathName": "pages/join_select/join_select",
           "query": "scene=authorId,546",
           "scene": "1048"
+        },
+        {
+          "id": 1,
+          "name": "发布邀请",
+          "pathName": "pages/post_invitation/post_invitation",
+          "query": "scene=authorId,546",
+          "scene": "1048"
         }
       ]
 		}

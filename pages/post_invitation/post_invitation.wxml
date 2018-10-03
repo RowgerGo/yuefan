@@ -1,0 +1,24 @@
+<!--pages/post_invitation/post_invitation.wxml-->
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">主题</view>
+        <view class="page__desc">确定聚会主题及邀请封面</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-form-preview">
+            <view class="theme_cover">主题及封面</view>
+            <view class="weui-form-preview__hd post_title">    
+              <text class="post_title_item">主题</text>
+              <text class="post_title_item">约饭</text>
+            </view>
+            <view class="weui-form-preview__bd">
+               <view class="select_cover">
+                <text>点击指定请帖封面</text>
+               </view>
+            </view>
+            <view class="weui-form-preview__ft">
+                <navigator url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">下一步</navigator>
+            </view>
+        </view>
+    </view>
+</view>

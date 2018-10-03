@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/join_select/join_select"
+    "pages/join_select/join_select",
+    "pages/post_invitation/post_invitation"
   ],
   "window":{
     "backgroundTextStyle":"light",
