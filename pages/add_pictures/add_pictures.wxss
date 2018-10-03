@@ -1,0 +1,31 @@
+/* pages/add_pictures/add_pictures.wxss */
+
+.page__title {
+  width: 80px;
+  height: 28px;
+  font-size: 20px;
+  color: rgba;
+  margin-left: 40px;
+}
+
+.page__desc {
+  margin-left: 40px;
+  font-size: 14px;
+  line-height: 50px;
+  color: #ccc;
+}
+.button-sp-area{
+  margin: 20px auto 0 auto;
+    padding-top: 5px;
+    width: 95%;
+}
+.button-sp-area_1{
+  margin: 5px auto 0 auto;
+    padding-top: 2px;
+    width: 95%;
+  
+}
+.btn_theme{
+   color:#DB6283!important;
+ 
+}

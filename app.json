@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/join_select/join_select",
-    "pages/post_invitation/post_invitation"
+    "pages/post_invitation/post_invitation",
+    "pages/add_pictures/add_pictures"
   ],
   "window":{
     "backgroundTextStyle":"light",
