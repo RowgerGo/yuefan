@@ -1,7 +1,16 @@
 /* pages/game_tool/game_tool.wxss */
+<<<<<<< HEAD
 
 .page__title {
   width: 40x;
+=======
+.page{
+  background: #F8F8F8;
+  height: 100vh;
+  }
+.page__title{
+   width:40x;
+>>>>>>> 80efb442a3ed04c64bad26bf116a305065143eea
   height: 30px;
   font-size: 20px;
   margin-left: 40px;
@@ -30,3 +39,12 @@
 .weui-navbar__slider {
   color: red !important;
 }
+<<<<<<< HEAD
+=======
+.weui-navbar__slider{
+  color: red!important;
+}
+.weui-bar__item_on .weui-bar__item_select{
+  text-align: center;
+}
+>>>>>>> 80efb442a3ed04c64bad26bf116a305065143eea

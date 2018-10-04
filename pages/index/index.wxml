@@ -14,7 +14,7 @@
         <picker mode="date" value="{{date}}" start="2015-09-01 09:01" end="2022-09-01 21:01" bindchange="bindDateChange">
           <view class="weui-input">{{date}}</view>
         </picker>
-         <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+        <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
           <view class="weui-input">{{time}}</view>
         </picker>
         <view>{{day==""?'':'星期'+day}}</view>
@@ -25,11 +25,18 @@
         <view class="weui-label">主题</view>
       </view>
       <view class="weui-cell__bd">
-       <view class="weui-label">约饭</view>
+        <view class="weui-label">约饭</view>
       </view>
     </view>
 
+    <view class="weui-grids weui-grids_margin">
+      <block wx:for="{{grids}}" wx:key="*this">
+        <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=4016787208,3677900801&fm=85&s=4AA43E62A656EF9A5AF505DA0100E0B1" />
+          <view class="weui-grid__label">Grid</view>
+        </navigator>
+      </block>
+    </view>
 
-    
   </view>
 </view>

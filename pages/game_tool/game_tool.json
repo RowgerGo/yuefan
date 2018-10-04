@@ -1,1 +1,6 @@
-{}
+{
+  "usingComponents":{
+    "collect":"../../components/collect/collect",
+    "dinner_party":"../../components/dinner_party/dinner_party"
+  }
+}
