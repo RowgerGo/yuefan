@@ -1,5 +1,8 @@
 /* pages/game_tool/game_tool.wxss */
-
+.page{
+  background: #F8F8F8;
+  height: 100vh;
+  }
 .page__title{
    width:40x;
   height: 30px;
@@ -24,5 +27,7 @@
 }
 .weui-navbar__slider{
   color: red!important;
-  
+}
+.weui-bar__item_on .weui-bar__item_select{
+  text-align: center;
 }

@@ -25,7 +25,7 @@
     width: 95%;
   
 }
-.btn_theme{
+.btn_theme_red{
    color:#DB6283!important;
- 
+   border-color: #DB6283!important; 
 }
