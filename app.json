@@ -6,7 +6,7 @@
     "pages/post_invitation/post_invitation",
     "pages/add_pictures/add_pictures",
     "pages/game_tool/game_tool",
-    "pages/empower_1/empower_1"
+    "pages/select_friends/select_friends"
   ],
   "window":{
     "backgroundTextStyle":"light",
