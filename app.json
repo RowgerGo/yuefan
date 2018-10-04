@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/join_select/join_select",
     "pages/post_invitation/post_invitation",
-    "pages/add_pictures/add_pictures"
+    "pages/add_pictures/add_pictures",
+    "pages/game_tool/game_tool"
   ],
   "window":{
     "backgroundTextStyle":"light",

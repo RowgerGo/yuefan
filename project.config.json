@@ -51,6 +51,13 @@
           "pathName": "pages/add_pictures/add_pictures",
           "query": "scene=authorId,546",
           "scene": "1048"
+        },
+        {
+          "id": 3,
+          "name": "游戏和工具",
+          "pathName": "pages/game_tool/game_tool",
+          "query": "scene=authorId,546",
+          "scene": "1048"
         }
       ]
 		}

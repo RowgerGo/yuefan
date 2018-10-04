@@ -6,7 +6,7 @@
 }
 .page__desc{
   font-size: 12pt!important;
-  color: #AEADAD;
+   color: #B9B5B5;
   margin-left: 40px;
 }
 .page__bd{
