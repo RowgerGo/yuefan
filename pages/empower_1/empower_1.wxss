@@ -1,0 +1,4 @@
+/* pages/empower_1/empower_1.wxss */
+page{
+    background-color: #FFFFFF;
+}

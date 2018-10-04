@@ -58,6 +58,13 @@
           "pathName": "pages/game_tool/game_tool",
           "query": "scene=authorId,546",
           "scene": "1048"
+        },
+        {
+                    "id": 4,
+                    "name": "00-01授权页",
+                    "pathName": "pages/empower_1/empower_1",
+                    "query": "scene=authorId,546",
+                    "scene": "1048"
         }
       ]
 		}
