@@ -72,6 +72,13 @@
           "pathName": "pages/view_more/view_more",
           "query": "scene=authorId,546",
           "scene": "1048"
+        },
+        {
+          "id": 6,
+          "name": "你收藏了***的帖子",
+          "pathName": "pages/collect_posts/collect_posts",
+          "query": "scene=authorId,546",
+          "scene": "1048"
         }
       ]
     }

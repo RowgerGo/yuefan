@@ -7,7 +7,8 @@
     "pages/add_pictures/add_pictures",
     "pages/game_tool/game_tool",
     "pages/select_friends/select_friends",
-    "pages/view_more/view_more"
+    "pages/view_more/view_more",
+    "pages/collect_posts/collect_posts"
   ],
   "window":{
     "backgroundTextStyle":"light",

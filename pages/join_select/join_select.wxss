@@ -1,5 +1,4 @@
 /* pages/join_select/join_select.wxss */
-
 .button-sp-area {
   margin: 20px auto 0 auto;
   padding-top: 15px;
