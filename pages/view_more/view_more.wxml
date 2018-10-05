@@ -24,7 +24,7 @@
           </view>
           <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
             <view class="weui-media-box__title">作者名</view>
-            <view class="weui-media-box__desc">POI名称</view>
+            <view class="weui-media-box__desc">POI名称+POI地址</view>
             <view class="weui-media-box__desc">标题</view>
           </view>
         </navigator>
@@ -34,7 +34,7 @@
           </view>
           <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
             <view class="weui-media-box__title">作者名</view>
-            <view class="weui-media-box__desc">POI名称</view>
+            <view class="weui-media-box__desc">POI名称+POI地址</view>
             <view class="weui-media-box__desc">标题</view>
           </view>
         </navigator>
@@ -44,7 +44,7 @@
           </view>
           <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
             <view class="weui-media-box__title">作者名</view>
-            <view class="weui-media-box__desc">POI名称</view>
+            <view class="weui-media-box__desc">POI名称+POI地址</view>
             <view class="weui-media-box__desc">标题</view>
           </view>
         </navigator>
@@ -54,7 +54,7 @@
           </view>
           <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
             <view class="weui-media-box__title">作者名</view>
-            <view class="weui-media-box__desc">POI名称</view>
+            <view class="weui-media-box__desc">POI名称+POI地址</view>
             <view class="weui-media-box__desc">标题</view>
           </view>
         </navigator>
@@ -62,6 +62,6 @@
     </view>
   </view>
   <view class="weui-btn-area">
-    <button class="weui-btn btn_theme_red" type="default" bindtap="openSuccess">取消</button>
+    <button class="weui-btn btn_theme_red" type="default" bindtap="openSuccess">返回首页</button>
   </view>
 </view>
