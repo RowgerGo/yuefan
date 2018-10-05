@@ -1,0 +1,20 @@
+/* components/game_tool_header/game_tool_header.wxss */
+
+.page{
+  background: #F8F8F8;
+  }
+.page__title{
+   width:40x;
+  height: 30px;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.page__desc {
+  margin-left: 40px;
+  font-size: 14px;
+  line-height: 50px;
+  color: #b9b5b5;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,16 @@
+<!--components/game_tool_header/game_tool_header.wxml-->
+<view class='page'>
+
+  <view wx:if="{{activeIndex==0}}">
+    <view class="page__title">D帖收藏</view>
+    <view class="page__desc">饭局小互动，防尬聊神器</view>
+  </view>
+  <view wx:if="{{activeIndex==1}}">
+    <view class="page__title">我的饭局</view>
+    <view class="page__desc">饭局小互动，防尬聊神器<text>组局+</text></view>
+  </view>
+  <view wx:if="{{activeIndex==2}}">
+    <view class="page__title">游戏和工具</view>
+    <view class="page__desc">饭局小互动，防尬聊神器</view>
+  </view>
+</view>

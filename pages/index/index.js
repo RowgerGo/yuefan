@@ -7,6 +7,7 @@ Page({
     motto: 'Hello World',
     grids:[0,0,2,3,34,435,345,456,45645],
     userInfo: {},
+    grid_select:8,
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     showTopTips: false,
@@ -20,7 +21,7 @@ Page({
       { name: 'standard is dealicient for u.', value: '1' }
     ],
 
-    date: "2016-09-01",
+    date: "2016-09-02",
     time: "12:01",
     day:'',
     countryCodes: ["+86", "+80", "+84", "+87"],
@@ -40,7 +41,19 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  onLoad: function (option) {
+    let a="罗杰" 
+    
+    let type = option.type
+    let value =option.value
+
+    wx.showToast({
+      title: type + value,
+      icon: 'success',
+      duration: 2000
+    })
+
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -180,5 +193,13 @@ Page({
     this.setData({
       isAgree: !!e.detail.value.length
     });
+  },
+  grid_select:function(e){
+    var index = e.currentTarget.dataset.index;
+
+    console.log(index)
+    this.setData({
+      grid_select:index
+    })
   }
 })

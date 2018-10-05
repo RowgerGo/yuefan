@@ -7,6 +7,6 @@
     <button class="weui-btn btn_theme_red" type="primary" plain="true">确定参加</button>
     <button class="weui-btn btn_theme_red" type="primary" plain="true">场外支持</button>
     <button class="weui-btn btn_theme_red" type="primary" plain="true">待定</button>
-    <button class="weui-btn btn_theme_red btn_login_out" type="primary" plain="true">退出参与</button>
+    <button class="weui-btn btn_theme_red btn_login_out" bindtap='NavigateToIndex' type="primary" plain="true">退出参与</button>
   </view>
 </view>

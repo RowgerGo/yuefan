@@ -1,7 +1,6 @@
 <!--pages/game_tool/game_tool.wxml-->
 <view class="page">
-  <view class="page__title">游戏和工具</view>
-  <view class="page__desc">饭局小互动，防尬聊神器</view>
+ <game_tool_header activeIndex='{{activeIndex}}'/>
   <view class="page_1">
     <view class="page__bd">
       <view class="weui-tab">
