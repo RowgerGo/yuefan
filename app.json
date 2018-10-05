@@ -6,7 +6,8 @@
     "pages/post_invitation/post_invitation",
     "pages/add_pictures/add_pictures",
     "pages/game_tool/game_tool",
-    "pages/select_friends/select_friends"
+    "pages/select_friends/select_friends",
+    "pages/view_more/view_more"
   ],
   "window":{
     "backgroundTextStyle":"light",

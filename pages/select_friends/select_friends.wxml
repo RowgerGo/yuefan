@@ -18,6 +18,6 @@
 <view class="page__bd">
   <view class="weui-btn-area">
     <button class="weui-btn btn_theme_red" type="default" bindtap="openSuccess">取消</button>
-    <button class="weui-btn btn_theme_red" type="primary" bindtap="openFail">确定</button>
+    <button class="weui-btn btn_theme_red" type="default" bindtap="openFail">确定</button>
   </view>
 </view>

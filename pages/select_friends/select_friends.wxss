@@ -22,5 +22,4 @@
 }
 .btn_theme_red{
   border: 1px solid #ccc!important;
-  background-color: #ffffff;
 }
