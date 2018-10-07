@@ -1,0 +1,27 @@
+/* pages/manage_join/manage_join.wxss */
+.button-sp-area {
+  margin: 20px auto 0 auto;
+  padding-top: 15px;
+  width: 60%;
+  
+}
+
+.btn_theme_red {
+  color: #db6283 !important;
+  border: 1px solid #db6283 !important;
+}
+
+.page__title {
+  margin-left: 20px;
+  font-size: 18pt;
+}
+
+.page__desc {
+  margin-left: 20px;
+  color: #b9b5b5;
+  font-size: 11pt;
+}
+
+.btn_login_out {
+  margin-top: 30px !important;
+}

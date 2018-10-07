@@ -113,6 +113,27 @@
         "pathName": "pages/photo_author/photo_author",
         "query": "scene=authorId,546",
         "scene": "1048"
+        },
+        {
+          "id": 12,
+          "name": "管理参与者",
+          "pathName": "pages/manage_join/manage_join",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 13,
+          "name": "定地点",
+          "pathName": "pages/pick_place/pick_place",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 14,
+          "name": "选择相册封面",
+          "pathName": "pages/select_cover/select_cover",
+          "query": "scene=authorId,546",
+          "scene": "1048"
         }
       ]
     }

@@ -13,7 +13,10 @@
     "pages/poi_name/poi_name",
     "pages/select_time/select_time",
     "pages/poi_name_name/poi_name_name",
-    "pages/photo_author/photo_author"
+    "pages/photo_author/photo_author",
+    "pages/manage_join/manage_join",
+    "pages/pick_place/pick_place",
+    "pages/select_cover/select_cover"
   ],
   "window": {
     "backgroundTextStyle": "light",
