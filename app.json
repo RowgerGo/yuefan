@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/join_select/join_select",
@@ -10,13 +10,14 @@
     "pages/view_more/view_more",
     "pages/collect_posts/collect_posts",
     "pages/select_theme/select_theme",
-    "pages/poi_name/poi_name"
+    "pages/poi_name/poi_name",
+    "pages/poi_name"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "约饭",
-    "navigationBarTextStyle":"black",
-    "navigationStyle":"default"
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default"
   }
 }

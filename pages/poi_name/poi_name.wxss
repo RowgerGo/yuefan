@@ -1,0 +1,77 @@
+/* pages/POI_name/POI_name.wxss */
+
+.header {
+  display: flex;
+  padding: 0 20px;
+}
+
+.page__hd {
+  padding: 40px;
+}
+
+.page__title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.image {
+  margin: 4px 0;
+}
+
+.page__desc {
+  margin-top: 5px;
+  color: #888;
+  text-align: left;
+  font-size: 14px;
+}
+
+.weui-cell__bb {
+  color: #888;
+  font-size: 14px;
+}
+
+.weui-cell__ft {
+  color: #888;
+  font-size: 14px;
+}
+
+.page__bd {
+  padding-bottom: 40px;
+}
+
+.btn_theme_red {
+  border: 1px solid #ccc !important;
+}
+
+.input_date_time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weui-grids_margin {
+  margin-top: 10px !important;
+}
+
+.select_icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.weui-form-preview__btn_primary-on {
+  color: #db6283 !important;
+}
+
+.weui-form-preview__item_self {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_theme_red {
+  border: 1px solid #d9d9d9 !important;
+  width: 90%;
+  margin-top: 30rpx;
+  background-color: #FFF;
+}
