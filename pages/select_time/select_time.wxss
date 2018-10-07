@@ -10,7 +10,7 @@
 .page__desc {
   margin-left: 40px;
   margin-top: 15px;
-  font-size: 11px;
+  font-size: 27rpx;
   line-height: 20px;
   color: #999999;
 }
@@ -21,6 +21,7 @@
   display: flex;
   justify-content: center;
   color: #999999;
+  margin-bottom: 20px;
 }
 .weui-cell__hd{
   display: flex;
@@ -36,7 +37,7 @@
 
 }
 .button-sp-area {
- padding-top: 20px;
+ padding-top: 30px;
   width: 100%;
   border-top: 1px solid #999999;
   margin-top: 20px;

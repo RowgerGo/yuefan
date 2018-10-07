@@ -12,7 +12,8 @@
     "pages/select_theme/select_theme",
     "pages/poi_name/poi_name",
     "pages/select_time/select_time",
-    "pages/poi_name_name/poi_name_name"
+    "pages/poi_name_name/poi_name_name",
+    "pages/photo_author/photo_author"
   ],
   "window": {
     "backgroundTextStyle": "light",

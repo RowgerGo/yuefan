@@ -107,6 +107,12 @@
           "pathName": "pages/poi_name_name/poi_name_name",
           "query": "scene=authorId,546",
           "scene": "1048"
+        },
+        {"id": 11,
+        "name": "图片作者",
+        "pathName": "pages/photo_author/photo_author",
+        "query": "scene=authorId,546",
+        "scene": "1048"
         }
       ]
     }

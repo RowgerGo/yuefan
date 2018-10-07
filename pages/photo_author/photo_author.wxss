@@ -1,0 +1,50 @@
+/* pages/photo_author/photo_author.wxss */
+
+.page__title {
+  font-size: 20pt;
+  color: #000;
+  margin-left: 40px;
+}
+
+.page__desc {
+  font-size: 12pt !important;
+  color: #b9b5b5;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.page_bd {
+  border-top: 1px solid #b9b5b5;
+}
+
+.picture_tittle {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.picture_share {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.picture_share_item {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 5px 10px 5px;
+}
+
+.button-sp-area {
+  padding-top: 30px;
+  width: 100%;
+  border-top: 1px solid #999;
+  margin-top: 20px;
+}
+
+.btn_theme_style {
+  color: #999 !important;
+  border: 1px solid #999 !important;
+  margin-left: 10px;
+  margin-right: 10px;
+}
