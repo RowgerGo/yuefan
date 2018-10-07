@@ -1,5 +1,23 @@
 /* pages/select_theme/select_theme.wxss */
-.post_title_item{
-margin-top: 50px;
-margin-left: 50px;
+.bottom_boder {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
+.post_title_item {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.select_laber{
+  margin-right: 10px;
+}
+.button-sp-area{
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 60%;
+}
+.red{
+  color: red!important;
+  border-color: red!important;
 }

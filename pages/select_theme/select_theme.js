@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    theme:''
   },
 
   /**
@@ -62,5 +62,16 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  theme_select:function(e){
+    var theme = e.currentTarget.dataset.theme;
+    if (theme!=""){
+      this.setData({
+        theme: theme
+      })
+    }else{
+      console.log(111111111111111)
+    }
+  
   }
 })
