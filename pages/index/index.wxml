@@ -37,7 +37,7 @@
         </view>
       </block>
       <block wx:for="{{grids}}" wx:key="*this">
-        <view  class="weui-grid" hover-class="weui-grid_active"  data-index='{{index}}' bindtap="grid_select" >
+        <view  class="weui-grid   {{grid_select == index ? 'back_test' : ''}}" hover-class="weui-grid_active"  data-index='{{index}}' bindtap="grid_select" >
           <image class="weui-grid__icon" src="https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=4016787208,3677900801&fm=85&s=4AA43E62A656EF9A5AF505DA0100E0B1" />
           <view class="weui-grid__label">Grid  {{index}}</view>
           <view   wx:if="{{grid_select==index}}" ><icon  class="select_icon"  type="success_no_circle"   size="23"></icon></view>  
