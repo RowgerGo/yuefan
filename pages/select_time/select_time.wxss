@@ -1,15 +1,18 @@
 /* pages/select_time/select_time.wxss */
-.page__title{
-   width:40x;
+
+.page__title {
+  width: 40x;
   height: 30px;
   font-size: 20px;
   margin-left: 40px;
 }
+
 .page__desc {
   margin-left: 40px;
   margin-top: 15px;
   font-size: 11px;
   line-height: 20px;
+<<<<<<< HEAD
   color: #999999;
 }
 .date_time{
@@ -39,3 +42,8 @@
   border-top: 1px solid #999999;
   margin-top: 20px;
 }
+=======
+  color: #b9b5b5;
+}
+
+>>>>>>> 7d76f7c7c8ecf9978f59a89283c89c03f36b82f9

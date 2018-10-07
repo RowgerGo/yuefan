@@ -80,10 +80,12 @@
           "query": "scene=authorId,546",
           "scene": "1048"
         },
-        {"id": 7,
+        {
+          "id": 7,
           "name": "POI名字",
           "pathName": "pages/poi_name/poi_name",
           "query": "scene=authorId,546",
+<<<<<<< HEAD
           "scene": "1048"},
           {
             "id": 8,
@@ -99,6 +101,24 @@
             "query": "scene=authorId,546",
             "scene": "1048"
           }
+=======
+          "scene": "1048"
+        },
+        {
+          "id": 8,
+          "name": "选择主题",
+          "pathName": "pages/select_theme/select_theme",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 10,
+          "name": "POI名字2",
+          "pathName": "pages/poi_name_name/poi_name_name",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        }
+>>>>>>> 7d76f7c7c8ecf9978f59a89283c89c03f36b82f9
       ]
     }
   }
