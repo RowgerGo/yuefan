@@ -1,2 +1,51 @@
 <!--pages/POI_name/POI_name.wxml-->
-<text>pages/POI_name/POI_name.wxml</text>
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">POI 名字</view>
+    <view class="page__desc">地址信息</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-cell weui-cell_input weui-cells_after-title">
+      <view class="weui-cell__hd">
+        <view class="weui-label">日期</view>
+      </view>
+      <view class="weui-cell__bd input_date_time">
+        <picker mode="date" value="{{date}}" start="2015-09-01 09:01" end="2022-09-01 21:01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+        <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+          <view class="weui-input">{{time}}</view>
+        </picker>
+        <view>{{day==""?'':'星期'+day}}</view>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">主题</view>
+      </view>
+      <view class="weui-cell__bd">
+        <view class="weui-label">约饭</view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_switch">
+      <view class="weui-cell__bd">不允许参与者上传照片</view>
+      <view class="weui-cell__ft">
+        <switch checked />
+      </view>
+    </view>
+  </view>
+  <view class="weui-form-preview__bd">
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">添加照片</view>
+      <view class="weui-form-preview__value">已上传0张</view>
+    </view>
+  </view>
+  <view class="weui-form-preview">
+    <view class="weui-form-preview__ft">
+      <navigator class="weui-form-preview__btn weui-form-preview__btn_default" hover-class="weui-form-preview__btn_active">返回请帖页</navigator>
+      <navigator class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">添加照片</navigator>
+    </view>
+  </view>
+</view>
