@@ -9,12 +9,8 @@
     "pages/select_friends/select_friends",
     "pages/view_more/view_more",
     "pages/collect_posts/collect_posts",
-<<<<<<< HEAD
-    "pages/POI_name/POI_name",
-    "pages/select_theme/select_theme"
-=======
+    "pages/select_theme/select_theme",
     "pages/poi_name/poi_name"
->>>>>>> 12a057020ff261c8f6418559737a42be381a0886
   ],
   "window":{
     "backgroundTextStyle":"light",
