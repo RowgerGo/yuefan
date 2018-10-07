@@ -17,7 +17,7 @@
 </view>
 <view class="page__bd">
   <view class="weui-btn-area">
-    <button class="weui-btn btn_theme_red" type="default" bindtap="false">取消</button>
+    <button class="weui-btn btn_theme_red" type="default" >取消</button>
     <button class="weui-btn btn_theme_red" type="default" bindtap="true">确定</button>
   </view>
 </view>

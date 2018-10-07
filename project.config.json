@@ -82,7 +82,7 @@
         },
         {"id": 7,
           "name": "POI名字",
-          "pathName": "pages/POI_name/POI_name",
+          "pathName": "pages/poi_name/poi_name",
           "query": "scene=authorId,546",
           "scene": "1048"},
           {
