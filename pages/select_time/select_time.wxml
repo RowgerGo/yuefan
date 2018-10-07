@@ -1,0 +1,6 @@
+<!--pages/select_time/select_time.wxml-->
+<view class="page">
+  <view class="page__title">选时间</view>
+  <view class="page__desc">请确定具体组局时间后点下一步，或点击待定跳过此步。</view>
+
+  </view>

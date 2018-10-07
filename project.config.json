@@ -84,7 +84,14 @@
           "name": "POI名字",
           "pathName": "pages/POI_name/POI_name",
           "query": "scene=authorId,546",
-          "scene": "1048"}
+          "scene": "1048"},
+          {
+            "id": 8,
+            "name": "选择主题",
+            "pathName": "pages/select_theme/select_theme",
+            "query": "scene=authorId,546",
+            "scene": "1048"
+          }
       ]
     }
   }

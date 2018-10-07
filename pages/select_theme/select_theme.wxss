@@ -1,0 +1,5 @@
+/* pages/select_theme/select_theme.wxss */
+.post_title_item{
+margin-top: 50px;
+margin-left: 50px;
+}

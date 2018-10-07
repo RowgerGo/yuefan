@@ -1,0 +1,7 @@
+<!--pages/select_theme/select_theme.wxml-->
+<view class="page">
+    <view class="page__hd">
+        <text class="post_title_item">主题</text>
+        <text class="post_title_item">小聚</text>
+    </view>
+  </view>
