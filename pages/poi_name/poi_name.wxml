@@ -51,6 +51,7 @@
       </view>
     </view>
   </view>
+<<<<<<< HEAD
   <view class="weui-grids">
     <block wx:for="{{grids}}" wx:key="*this">
       <navigator url="" class="weui-grid" hover-class="weui-grid_active">
@@ -58,6 +59,17 @@
         <view class="weui-grid__label">Grid</view>
       </navigator>
     </block>
+=======
+  <view class="page__bd grid_top">
+    <view class="weui-grids">
+      <block wx:for="{{grids}}" wx:key="*this">
+        <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/images/icon_tabbar.png" />
+          <view class="weui-grid__label">Grid</view>
+        </navigator>
+      </block>
+    </view>
+>>>>>>> 1f361896446e788486f0ce6daf47dbda59fafc0d
   </view>
   <view class="weui-btn-area">
     <button class="weui-btn btn_theme_red">删除指定照片</button>
