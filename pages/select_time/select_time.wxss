@@ -12,7 +12,6 @@
   margin-top: 15px;
   font-size: 11px;
   line-height: 20px;
-<<<<<<< HEAD
   color: #999999;
 }
 .date_time{
@@ -42,8 +41,9 @@
   border-top: 1px solid #999999;
   margin-top: 20px;
 }
-=======
-  color: #b9b5b5;
+.input_date_time{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
->>>>>>> 7d76f7c7c8ecf9978f59a89283c89c03f36b82f9

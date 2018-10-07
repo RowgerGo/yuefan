@@ -11,11 +11,8 @@
     "pages/collect_posts/collect_posts",
     "pages/select_theme/select_theme",
     "pages/poi_name/poi_name",
-<<<<<<< HEAD
-    "pages/select_time/select_time"
-=======
+    "pages/select_time/select_time",
     "pages/poi_name_name/poi_name_name"
->>>>>>> 7d76f7c7c8ecf9978f59a89283c89c03f36b82f9
   ],
   "window": {
     "backgroundTextStyle": "light",

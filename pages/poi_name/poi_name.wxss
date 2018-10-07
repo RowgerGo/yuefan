@@ -77,14 +77,11 @@
   margin-top: 30rpx;
   background-color: #FFF;
 }
-<<<<<<< HEAD
 .weui-cell_input{
   display: flex;
   padding-top: 5px;
   padding-bottom: 5px;
-  
-=======
+}
 .grid_top{
  margin-top: 15px; 
->>>>>>> 1f361896446e788486f0ce6daf47dbda59fafc0d
 }
