@@ -75,3 +75,6 @@
   margin-top: 30rpx;
   background-color: #FFF;
 }
+.grid_top{
+ margin-top: 15px; 
+}

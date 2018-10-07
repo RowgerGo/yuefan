@@ -51,7 +51,7 @@
       <view class="weui-form-preview__btn weui-form-preview__btn_primary weui-form-preview__btn_primary-on" hover-class="weui-form-preview__btn_active">添加照片</view>
     </view>
   </view>
-  <view class="page__bd">
+  <view class="page__bd grid_top">
     <view class="weui-grids">
       <block wx:for="{{grids}}" wx:key="*this">
         <navigator url="" class="weui-grid" hover-class="weui-grid_active">
