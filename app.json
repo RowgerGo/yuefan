@@ -9,7 +9,7 @@
     "pages/select_friends/select_friends",
     "pages/view_more/view_more",
     "pages/collect_posts/collect_posts",
-    "pages/POI_name/POI_name"
+    "pages/poi_name/poi_name"
   ],
   "window":{
     "backgroundTextStyle":"light",
