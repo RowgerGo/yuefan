@@ -91,6 +91,13 @@
             "pathName": "pages/select_theme/select_theme",
             "query": "scene=authorId,546",
             "scene": "1048"
+          },
+          {
+            "id": 9,
+            "name": "选时间",
+            "pathName": "pages/select_time/select_time",
+            "query": "scene=authorId,546",
+            "scene": "1048"
           }
       ]
     }

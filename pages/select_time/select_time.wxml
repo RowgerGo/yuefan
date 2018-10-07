@@ -1,6 +1,26 @@
 <!--pages/select_time/select_time.wxml-->
 <view class="page">
-  <view class="page__title">选时间</view>
-  <view class="page__desc">请确定具体组局时间后点下一步，或点击待定跳过此步。</view>
-
+  <view class="page__hd">
+    <view class="page__title">选时间</view>
+    <view class="page__desc">请确定具体组局时间后点下一步，或点击待定跳过此步。</view>
   </view>
+  <view class="page_bd">
+    <view class="date_time">日期/时间/星期</view>
+    <view class="weui-cell__hd">
+      <view class="weui-label">日期</view>
+      <view class="weui-cell__bd input_date_time">
+        <picker mode="date" value="{{date}}" start="2015-09-01 09:01" end="2022-09-01 21:01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+        <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+          <view class="weui-input">{{time}}</view>
+        </picker>
+        <view>{{day==""?'':'星期'+day}}</view>
+      </view>
+    </view>
+     <view class="button-sp-area">
+    <button class="weui-btn btn_theme_red" type="primary" plain="true">下一步</button>
+    <button class="weui-btn btn_theme_red" type="primary" plain="true">取消退出</button>
+    </view>
+  </view>
+</view>

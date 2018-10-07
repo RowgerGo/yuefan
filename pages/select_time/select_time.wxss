@@ -10,5 +10,32 @@
   margin-top: 15px;
   font-size: 11px;
   line-height: 20px;
-  color: #b9b5b5;
+  color: #999999;
+}
+.date_time{
+  border-top: 1px solid#999999;
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #999999;
+}
+.weui-cell__hd{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ border-bottom: 1px solid #999999;
+}
+.btn_theme_red {
+  color: #db6283 !important;
+  border: 1px solid #db6283 !important;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+.button-sp-area {
+ padding-top: 20px;
+  width: 100%;
+  border-top: 1px solid #999999;
+  margin-top: 20px;
 }
