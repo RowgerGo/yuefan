@@ -46,6 +46,8 @@ Page({
     
     let type = option.type
     let value =option.value
+    
+   
 
     wx.showToast({
       title: type + value,

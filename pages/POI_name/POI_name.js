@@ -11,7 +11,6 @@ Page({
     countryCodes: ["+86", "+80", "+84", "+87"],
     countryCodeIndex: 0,
   },
-});
   /**
    * 生命周期函数--监听页面加载
    */
@@ -104,4 +103,5 @@ Page({
       time: e.detail.value
     })
   },
-})
+});
+  
