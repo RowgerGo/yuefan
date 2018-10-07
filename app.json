@@ -8,7 +8,8 @@
     "pages/game_tool/game_tool",
     "pages/select_friends/select_friends",
     "pages/view_more/view_more",
-    "pages/collect_posts/collect_posts"
+    "pages/collect_posts/collect_posts",
+    "pages/POI_name/POI_name"
   ],
   "window":{
     "backgroundTextStyle":"light",

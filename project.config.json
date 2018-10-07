@@ -79,7 +79,12 @@
           "pathName": "pages/collect_posts/collect_posts",
           "query": "scene=authorId,546",
           "scene": "1048"
-        }
+        },
+        {"id": 7,
+          "name": "POI名字",
+          "pathName": "pages/POI_name/POI_name",
+          "query": "scene=authorId,546",
+          "scene": "1048"}
       ]
     }
   }
