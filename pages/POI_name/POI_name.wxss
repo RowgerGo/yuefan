@@ -75,10 +75,3 @@
   margin-top: 30rpx;
   background-color: #FFF;
 }
-.btn_theme_self{
-  border: 1px solid #d9d9d9 !important;
-  width: 90%;
-  margin-top: 30rpx;
-  background-color: #FFF;
-color:#ccc;
-}

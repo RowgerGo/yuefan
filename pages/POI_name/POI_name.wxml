@@ -63,13 +63,13 @@
   </view>
   <view class="weui-btn-area">
     <button class="weui-btn btn_theme_red" >确定</button>
-    <button class="weui-btn btn_theme_self" >指定封面照片</button>
+    <button class="weui-btn btn_theme_red" >指定封面照片</button>
   </view>
   <view class="weui-loadmore weui-loadmore_line weui-loadmore_dot">
     <view class="weui-loadmore__tips weui-loadmore__tips_in-line weui-loadmore__tips_in-dot"></view>
   </view>
   <view class="weui-btn-area">
-    <button class="weui-btn btn_theme_self" >选择指定图片生成我的D帖收藏</button>
-    <button class="weui-btn btn_theme_self" >返回列表页</button>
+    <button class="weui-btn btn_theme_red" >选择指定图片生成我的D帖收藏</button>
+    <button class="weui-btn btn_theme_red" >返回列表页</button>
   </view>
 </view>
