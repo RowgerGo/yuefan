@@ -1,0 +1,23 @@
+/* pages/select_cover/select_cover.wxss */
+.page__title {
+  width: 40x;
+  height: 30px;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.page__desc_1{
+  margin-left: 40px;
+  margin-top: 15px;
+  font-size: 35rpx;
+  color: #999999;
+}
+.page__desc{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.weui-btn{
+  background-color: #db6283!important;
+  color: white!important;
+}

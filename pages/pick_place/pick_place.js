@@ -1,52 +1,13 @@
-// pages/select_time/select_time.js
+// pages/pick_place/pick_place.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    date: "2018-09-21",
-    time: "13:35",
-    day: '',
 
   },
-  bindDateChange: function (e) {
-    let Day = new Date(e.detail.value).getDay()
-    switch (Day) {
-      case 1:
-        Day = "一"
-        break;
-      case 2:
-        Day = "二"
-        break;
-      case 3:
-        Day = "三"
-        break;
-      case 4:
-        Day = "四"
-        break;
-      case 5:
-        Day = "五"
-        break;
-      case 6:
-        Day = "六"
-        break;
-      case 7:
-        Day = "七"
-        break;
-      default:
-        Day = ""
-    }
-    this.setData({
-      date: e.detail.value,
-      day: Day
-    })
-  },
-  bindTimeChange: function (e) {
-    this.setData({
-      time: e.detail.value
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

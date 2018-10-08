@@ -1,3 +1,4 @@
+<!--pages/poi_name_name/poi_name_name.wxml-->
 <!--pages/POI_name/POI_name.wxml-->
 <view class="page">
   <view class="page__hd">
@@ -31,12 +32,6 @@
       </view>
     </view>
     <view class="weui-cells weui-cells_after-title">
-      <view class="weui-cell weui-cell_switch">
-        <view class="weui-cell__bd">不允许参与者上传照片</view>
-        <view class="weui-cell__ft">
-          <switch checked color="#DB6283" />
-        </view>
-      </view>
     </view>
     <view class="weui-form-preview__bd">
       <view class="weui-form-preview__item weui-form-preview__item_self">
@@ -50,44 +45,17 @@
         <view class="weui-form-preview__btn weui-form-preview__btn_primary weui-form-preview__btn_primary-on" hover-class="weui-form-preview__btn_active">添加照片</view>
       </view>
     </view>
-    <view class="page__bd grid_top">
-      <view class="weui-grids">
-        <block wx:for="{{grids}}" wx:key="*this">
-          <navigator url="" class="weui-grid" hover-class="weui-grid_active">
-            <image class="weui-grid__icon" src="/images/icon_tabbar.png" />
-            <view class="weui-grid__label">Grid</view>
-          </navigator>
-        </block>
-      </view>
-    </view>
-    <view class="weui-grids">
-      <block wx:for="{{grids}}" wx:key="*this">
-        <navigator url="" class="weui-grid" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/images/icon_tabbar.png" />
-          <view class="weui-grid__label">Grid</view>
-        </navigator>
-      </block>
-    </view>
-    <view class="page__bd grid_top">
-      <view class="weui-grids">
-        <block wx:for="{{grids}}" wx:key="*this">
-          <navigator url="" class="weui-grid" hover-class="weui-grid_active">
-            <image class="weui-grid__icon" src="/images/icon_tabbar.png" />
-            <view class="weui-grid__label">Grid</view>
-          </navigator>
-        </block>
-      </view>
-    </view>
-    <view class="weui-btn-area">
-      <button class="weui-btn btn_theme_red">删除指定照片</button>
-      <button class="weui-btn btn_theme_red">指定封面照片</button>
-    </view>
-    <view class="weui-loadmore weui-loadmore_line weui-loadmore_dot">
-      <view class="weui-loadmore__tips weui-loadmore__tips_in-line weui-loadmore__tips_in-dot"></view>
-    </view>
-    <view class="weui-btn-area">
-      <button class="weui-btn btn_theme_red">选择指定图片生成我的D帖收藏</button>
-      <button class="weui-btn btn_theme_red">返回列表页</button>
-    </view>
-</view>
+  </view>
+  <view class="weui-grids">
+    <block wx:for="{{grids}}" wx:key="*this">
+      <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/images/icon_tabbar.png" />
+        <view class="weui-grid__label">Grid</view>
+      </navigator>
+    </block>
+  </view>
+  <view class="weui-btn-area">
+    <button class="weui-btn btn_theme_red">确定</button>
+    <button class="weui-btn btn_theme_red">返回列表页</button>
+  </view>
 </view>

@@ -1,5 +1,4 @@
-/* pages/select_time/select_time.wxss */
-
+/* pages/pick_place/pick_place.wxss */
 .page__title {
   width: 40x;
   height: 30px;
@@ -10,30 +9,29 @@
 .page__desc {
   margin-left: 40px;
   margin-top: 15px;
-  font-size: 27rpx;
-  line-height: 20px;
+  font-size: 35rpx;
   color: #999999;
 }
-.date_time{
+.place{
   border-top: 1px solid#999999;
   margin-top: 40px;
   width: 100%;
   display: flex;
   justify-content: center;
   color: #999999;
-  margin-bottom: 20px;
+ padding-top: 5px;
 }
-.weui-cell__hd{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- border-bottom: 1px solid #999999;
+.pick_place{
+   border-bottom: 1px solid#999999;
+   margin-left: 20px;
+   margin-top: 20px;
 }
 .btn_theme_red {
-  color: #db6283 !important;
+  color: white!important;
   border: 1px solid #db6283 !important;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #db6283!important;
 }
 .button-sp-area {
  padding-top: 30px;
@@ -41,9 +39,9 @@
   border-top: 1px solid #999999;
   margin-top: 20px;
 }
-.input_date_time{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.btn_theme_black {
+  color: black !important;
+  border: 1px solid #999999!important;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-

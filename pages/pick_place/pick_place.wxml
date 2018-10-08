@@ -1,0 +1,15 @@
+<!--pages/pick_place/pick_place.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">定地点</view>
+    <view class="page__desc">您可以点击地址栏指定具体地点</view>
+  </view>
+   <view class="page_bd">
+    <view class="place">地址栏</view>
+    <view class="pick_place">地址</view>
+     <view class="button-sp-area">
+    <button class="weui-btn btn_theme_red" type="default" plain="true">下一步</button>
+    <button class="weui-btn btn_theme_black" type="primary" plain="true">地点待定，下一步</button>
+    </view>
+    </view>
+</view>

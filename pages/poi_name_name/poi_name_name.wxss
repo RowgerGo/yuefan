@@ -1,3 +1,4 @@
+/* pages/poi_name_name/poi_name_name.wxss */
 /* pages/POI_name/POI_name.wxss */
 
 .header {
@@ -81,7 +82,5 @@
   display: flex;
   padding-top: 5px;
   padding-bottom: 5px;
-}
-.grid_top{
- margin-top: 15px; 
+  
 }

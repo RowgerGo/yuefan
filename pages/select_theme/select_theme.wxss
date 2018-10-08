@@ -16,8 +16,11 @@
     margin: 0 auto;
     padding-top: 15px;
     width: 60%;
-}
-.red{
-  color: red!important;
-  border-color: red!important;
+ }
+ .weui-btn{
+    color: #db6283!important;
+    border-color: #db6283!important;
+ }
+.tap_style{
+  background-color: rgba(219, 98, 130, 0.205) !important;
 }

@@ -9,12 +9,12 @@
     </view>
     
         <view class="button-sp-area">
-          <button  bindtap="theme_select" hover-class='red' data-theme='小聚' class="weui-btn" type="primary" plain="true">小聚</button>
-          <button bindtap="theme_select"  data-theme='生日派对' class="weui-btn" type="primary" plain="true">生日派对</button>
-          <button bindtap="theme_select"  data-theme='公司团建' class="weui-btn" type="primary" plain="true">公司团建</button>
-          <button bindtap="theme_select"  data-theme='旅游' class="weui-btn" type="primary" plain="true">旅游</button>
-          <button bindtap="theme_select"  data-theme='滑雪' class="weui-btn" type="primary" plain="true">滑雪</button>
-          <button bindtap="theme_select"  data-theme='' class="weui-btn" type="primary" plain="true">确定</button>
+          <button  bindtap="theme_select" hover-class='tap_style' data-theme='小聚' class="weui-btn" type="primary" plain="true">小聚</button>
+          <button bindtap="theme_select" hover-class='tap_style' data-theme='生日派对' class="weui-btn" type="primary" plain="true">生日派对</button>
+          <button bindtap="theme_select" hover-class='tap_style' data-theme='公司团建' class="weui-btn" type="primary" plain="true">公司团建</button>
+          <button bindtap="theme_select" hover-class='tap_style' data-theme='旅游' class="weui-btn" type="primary" plain="true">旅游</button>
+          <button bindtap="theme_select" hover-class='tap_style' data-theme='滑雪' class="weui-btn" type="primary" plain="true">滑雪</button>
+          <button bindtap="theme_select" hover-class='tap_style' data-theme='' class="weui-btn" type="primary" plain="true">确定</button>
         </view>
   </view>
  

@@ -1,0 +1,21 @@
+<!--pages/photo_author/photo_author.wxml-->
+<view class='page'>
+  <view class="page__hd">
+    <view class="page__title">图片作者名</view>
+    <view class="page__desc">2018年9月21日 14:27</view>
+  </view>
+  <view class='page_bd'>
+    <view class='picture_tittle'>图片分享</view>
+    <view class='picture_share'>
+      <view class='picture_share_item'><image class="weui-uploader__img" src="../../../images/pic_160.png" mode="aspectFill" /></view>
+      <view class='picture_share_item'><image class="weui-uploader__img" src="../../../images/pic_160.png" mode="aspectFill" /></view>
+      <view class='picture_share_item'><image class="weui-uploader__img" src="../../../images/pic_160.png" mode="aspectFill" /></view>
+       <view class='picture_share_item'><image class="weui-uploader__img" src="../../../images/pic_160.png" mode="aspectFill" /></view>
+        <view class='picture_share_item'><image class="weui-uploader__img" src="../../../images/pic_160.png" mode="aspectFill" /></view>
+    </view>
+    <view class="button-sp-area">
+    <button class="weui-btn btn_theme_style"type="primary"plain="true">关闭</button>
+
+    </view>
+  </view>
+</view>

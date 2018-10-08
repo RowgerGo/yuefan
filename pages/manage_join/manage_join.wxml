@@ -1,0 +1,13 @@
+<!--pages/manage_join/manage_join.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">管理参与者</view>
+    <view class="page__desc">您可以帮助参与者修改状态，或移除参与者</view>
+  </view>
+  <view class="button-sp-area">
+    <button class="weui-btn btn_theme_red" type="primary" plain="true">确定参加</button>
+    <button class="weui-btn btn_theme_red" type="primary" plain="true">场外支持</button>
+    <button class="weui-btn btn_theme_red" type="primary" plain="true">待定</button>
+    <button class="weui-btn btn_theme_red btn_login_out" bindtap='NavigateToIndex' type="primary" plain="true">移出参与</button>
+  </view>
+</view>
