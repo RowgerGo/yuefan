@@ -9,12 +9,22 @@
   font-size: 20px;
   margin-left: 40px;
 }
+.page_desc{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
-.page__desc {
+.page_desc_1 {
   margin-left: 40px;
   font-size: 14px;
   line-height: 50px;
   color: #b9b5b5;
   display: flex;
   justify-content: space-between;
+}
+
+.weui-btn{
+  color: white!important;
+  background-color:  #db6283!important;
 }
