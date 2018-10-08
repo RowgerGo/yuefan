@@ -134,7 +134,15 @@
           "pathName": "pages/select_cover/select_cover",
           "query": "scene=authorId,546",
           "scene": "1048"
+        },
+        {
+          "id": 15,
+          "name": "进入地图",
+          "pathName": "pages/enter_map/enter_map",
+          "query": "scene=authorId,546",
+          "scene": "1048"
         }
+
       ]
     }
   }

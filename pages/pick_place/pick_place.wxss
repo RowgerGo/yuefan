@@ -24,12 +24,14 @@
 .pick_place{
    border-bottom: 1px solid#999999;
    margin-left: 20px;
+   margin-top: 20px;
 }
 .btn_theme_red {
-  color: #db6283 !important;
+  color: white!important;
   border: 1px solid #db6283 !important;
   margin-left: 10px;
   margin-right: 10px;
+  background-color: #db6283!important;
 }
 .button-sp-area {
  padding-top: 30px;

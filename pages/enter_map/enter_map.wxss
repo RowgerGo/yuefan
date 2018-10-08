@@ -1,0 +1,8 @@
+/* pages/enter_map/enter_map.wxss */
+.weui-search-bar__cancel-btn{
+  color: #db6283;
+}
+.map{
+  width: 100%;
+  height: 200px;
+}

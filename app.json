@@ -16,7 +16,8 @@
     "pages/photo_author/photo_author",
     "pages/manage_join/manage_join",
     "pages/pick_place/pick_place",
-    "pages/select_cover/select_cover"
+    "pages/select_cover/select_cover",
+    "pages/enter_map/enter_map"
   ],
   "window": {
     "backgroundTextStyle": "light",
