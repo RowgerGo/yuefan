@@ -3,14 +3,17 @@
 
   <view wx:if="{{activeIndex==0}}">
     <view class="page__title">D帖收藏</view>
-    <view class="page__desc">饭局小互动，防尬聊神器</view>
+    <view class="page_desc_1">这里收藏着我感兴趣的博文</view>
   </view>
   <view wx:if="{{activeIndex==1}}">
     <view class="page__title">我的饭局</view>
-    <view class="page__desc">饭局小互动，防尬聊神器<text>组局+</text></view>
+    <view class='page_desc'>
+    <view class="page_desc_1">在这里发起或参与饭局</view>
+    <button class="weui-btn mini-btn" type="default" size="mini">组局+</button>
+    </view>
   </view>
   <view wx:if="{{activeIndex==2}}">
     <view class="page__title">游戏和工具</view>
-    <view class="page__desc">饭局小互动，防尬聊神器</view>
+    <view class="page_desc_1">饭局小互动，防尬聊神器</view>
   </view>
 </view>
