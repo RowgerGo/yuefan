@@ -1,0 +1,10 @@
+/* components/collect_item/collect_item.wxss */
+@import '../../style/weui.wxss';
+.collect_item_right{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  text-align: left;
+  vertical-align: top!important;
+ 
+}

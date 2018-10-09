@@ -1,37 +1,4 @@
-/* components/collect/collect.wxss */
-
-.weui-panel__hd{
-  display: flex;
-  color: #999999;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-.weui-panel__bd{
-  display: flex;
-  justify-content: flex-start;
-  flex-direction:column;
-  
-}
-.weui-cell__bd{
-  color: #DB6283;
-  display: flex;
-  margin-left: 20px;
-  border-top: 1px solid#DFDFDF; 
-  padding-top: 10px; 
-  margin-bottom: 10px; 
-}
-.weui-media-box__thumb{
-  margin-left: 20px;
-  width: 140rpx;
-  height: 140rpx; 
-}
-.weui-media-box{
-  display: flex;
-margin-bottom: 20px; 
-  justify-content: flex-start;
-}
-.weui-panel{
-  background:white;
-  border-top: 1px solid#DFDFDF;
-  border-bottom:1px solid#DFDFDF; 
+@import '../../style/weui.wxss';
+.weui-flex{
+  background: red!important;
 }

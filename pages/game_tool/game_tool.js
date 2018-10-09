@@ -6,6 +6,7 @@ Page({
    */
   data: {
     tabs: ["D贴收藏", "我的饭局", "游戏和工具"],
+    items: ['收藏1','收藏2'],
     activeIndex: 0,
     sliderOffset: 0,
     sliderLeft: 0,

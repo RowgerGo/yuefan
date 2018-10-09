@@ -37,3 +37,6 @@
 .weui-bar__item_on .weui-bar__item_select{
   text-align: center;
 }
+.weui-tab__content_clear_height{
+  padding-top: 0!important;
+}

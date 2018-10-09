@@ -13,13 +13,15 @@
           <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
         </view>
         <view class="weui-tab__panel">
-          <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
-            <collect />
+          
+          <view class="weui-tab__content weui-tab__content_clear_height" hidden="{{activeIndex != 0}}">
+            <text>收藏列表</text>
+            <collect_item name="名称1" wx:for="{{items}}" />
           </view>
-          <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
-            <dinner_party />
+          <view class="weui-tab__content  weui-tab__content_clear_height" hidden="{{activeIndex != 1}}">
+            <collect_item name="{{item}}"   wx:for="{{items}}"/>
           </view>
-          <view class="weui-tab__content" hidden="{{activeIndex != 2}}">暂无数据333</view>
+          <view class="weui-tab__content " hidden="{{activeIndex != 2}}">暂无数据333</view>
         </view>
       </view>
     </view>
