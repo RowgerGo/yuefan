@@ -10,6 +10,7 @@
 
 .btn_style_2{
    color: #db6283 !important;
+   border-left: 1px solid #ccc;
 }
 .weui-form-preview__ft{
   display: flex;
@@ -17,7 +18,7 @@
 }
 .weui-cell__bd_1{
   color: #999999;
-  font-size: 33rpx;
+  font-size:28rpx;
 }
 .weui-cell{
   border-bottom: 1px solid#999999;
@@ -25,7 +26,7 @@
 .end_style{
   display: flex;
   justify-content: center;
-  font-size: 30rpx;
+  font-size: 24rpx;
   margin-top: 10px;
 
 }
@@ -36,4 +37,17 @@
   display: flex!important;
   flex-direction: column-reverse!important;
 
+  }
+  .map_title{
+   font-size: 28rpx!important;
+
+  }
+  .map_des{
+    font-size: 22rpx!important;
+    color: #C8C5C5;
+  }
+  .btn_style,.btn_style_2{
+    font-size: 30rpx;
+    width: 50%;
+    text-align: center;
   }

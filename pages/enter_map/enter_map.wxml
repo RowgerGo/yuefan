@@ -20,14 +20,14 @@
 <view class="page_bd">
   <view class='map'>地图</view>
   <view class="weui-form-preview__ft">
-    <view class='btn_style' hover-class='weui-form-preview__btn_active'>默认列表</view>
+    <view class='btn_style'   hover-class='weui-form-preview__btn_active'>默认列表</view>
     <view class='btn_style_2' hover-class='weui-form-preview__btn_active'>地到标记</view>
   </view>
   <view class="place_tittle">
     <navigator url="" class="weui-cell" hover-class="weui-cell_active">
       <view class='place'>
-        <view class="weui-cell__bd">大渔铁板烧(国贸店)</view>
-        <view class="weui-cell__bd weui-cell__bd_1">北京市朝阳区建国门外大街甲6号中环世贸(SK大厦)D座2层</view>
+        <view class="weui-cell__bd map_title">大渔铁板烧(国贸店)</view>
+        <view class="weui-cell__bd map_des">北京市朝阳区建国门外大街甲6号中环世贸(SK大厦)D座2层</view>
       </view>
       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
     </navigator>
