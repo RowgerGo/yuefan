@@ -2,12 +2,19 @@
 Page({
 
   /**
-   * 页面的初始数据
+   * 页面的初始数据longitude="115.929465" latitude="28.68396"
    */
   data: {
     inputShowed: false,
-    inputVal: ""
-
+    inputVal: "",
+    circles: [{
+      latitude: '28.68396',
+      longitude: '115.929465',
+      color: '#FF0000DD',
+      fillColor: '#DB628388',
+      radius: 3000,
+      strokeWidth: 1
+    }]
   },
   showInput: function () {
     this.setData({
