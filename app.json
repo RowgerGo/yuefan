@@ -17,7 +17,8 @@
     "pages/manage_join/manage_join",
     "pages/pick_place/pick_place",
     "pages/select_cover/select_cover",
-    "pages/enter_map/enter_map"
+    "pages/enter_map/enter_map",
+    "pages/poi_name_name_name/poi_name_name_name"
   ],
   "window": {
     "backgroundTextStyle": "light",

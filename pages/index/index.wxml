@@ -6,6 +6,14 @@
     <view class="page__desc">地址信息</view>
   </view>
   <view class="page__bd">
+    <view class="weui-panel__bd">
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">链接</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+    </view>
     <view class="weui-cell weui-cell_input weui-cells_after-title">
       <view class="weui-cell__hd">
         <view class="weui-label">日期</view>
@@ -28,23 +36,5 @@
         <view class="weui-label">约饭</view>
       </view>
     </view>
-
-    <view class="weui-grids weui-grids_margin">
-     <block>
-        <view  class="weui-grid" hover-class="weui-grid_active" >
-          <image class="weui-grid__icon" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1304009865,1011631735&fm=179&app=42&f=JPEG?w=121&h=140" />
-          <view class="weui-grid__label">选择图片或拍照</view>       
-        </view>
-      </block>
-      <block wx:for="{{grids}}" wx:key="*this">
-        <view  class="weui-grid   {{grid_select == index ? 'back_test' : ''}}" hover-class="weui-grid_active"  data-index='{{index}}' bindtap="grid_select" >
-          <image class="weui-grid__icon" src="https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=4016787208,3677900801&fm=85&s=4AA43E62A656EF9A5AF505DA0100E0B1" />
-          <view class="weui-grid__label">Grid  {{index}}</view>
-          <view   wx:if="{{grid_select==index}}" ><icon  class="select_icon"  type="success_no_circle"   size="23"></icon></view>  
-          <view   wx:if="{{grid_select!=index}}" ><icon  class="select_icon"  type="circle"   size="23"></icon></view>        
-        </view>
-      </block>
-    </view>
-
   </view>
 </view>
