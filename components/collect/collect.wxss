@@ -1,4 +1,0 @@
-@import '../../style/weui.wxss';
-.weui-flex{
-  background: red!important;
-}

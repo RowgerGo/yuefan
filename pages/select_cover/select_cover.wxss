@@ -21,3 +21,14 @@
   background-color: #db6283!important;
   color: white!important;
 }
+.picture_cover{
+  margin-top:20px;
+ display: flex;
+ flex-wrap:wrap;
+ width: 100%;
+
+}
+.weui-uploader__img{
+
+ border: 1px solid#db6283!important;
+}

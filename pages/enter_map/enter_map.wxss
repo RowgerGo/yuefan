@@ -6,3 +6,34 @@
   width: 100%;
   height: 200px;
 }
+
+
+.btn_style_2{
+   color: #db6283 !important;
+}
+.weui-form-preview__ft{
+  display: flex;
+  justify-content: space-around;
+}
+.weui-cell__bd_1{
+  color: #999999;
+  font-size: 33rpx;
+}
+.weui-cell{
+  border-bottom: 1px solid#999999;
+}
+.end_style{
+  display: flex;
+  justify-content: center;
+  font-size: 30rpx;
+  margin-top: 10px;
+
+}
+.end_style_2{
+  color: #db6283;
+}
+.picture_cover{
+  display: flex!important;
+  flex-direction: column-reverse!important;
+
+  }
