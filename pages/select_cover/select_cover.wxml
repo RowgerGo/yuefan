@@ -10,23 +10,24 @@
   </view>
   <view class="page_bd">
     <view class='picture_cover'>
-      <view class='picture_cover_1'>
-        <image class="weui-uploader__img" src="../../../images/photo.png" />
+      <view class='picture_cover_1' data-index="0" data-name="罗杰1" bindtap='select'>
+      
+          <image mode="scaleToFill" class="weui-uploader__img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539096253677&di=84933ef3211d84e5a289b6f0153bb885&imgtype=0&src=http%3A%2F%2Fimg4q.duitang.com%2Fuploads%2Fitem%2F201303%2F28%2F20130328091625_t2Yja.jpeg"
+          />
+          <icon  class='icon_select' type="{{active_index==0?'success':'circle'}}" size="23"></icon>
       </view>
-      <view class='picture_cover_1'>
-        <image class="weui-uploader__img" src="../../../images/pic_160.png" />
+      <view class='picture_cover_1'  data-index="1" data-name="罗杰2"  bindtap='select'>
+      
+          <image mode="scaleToFill" class="weui-uploader__img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539096253677&di=84933ef3211d84e5a289b6f0153bb885&imgtype=0&src=http%3A%2F%2Fimg4q.duitang.com%2Fuploads%2Fitem%2F201303%2F28%2F20130328091625_t2Yja.jpeg"
+          />
+           <icon  class='icon_select' type="{{active_index==1?'success':'circle'}}" size="23"></icon>
+     
       </view>
-      <view class='picture_cover_1'>
-        <image class="weui-uploader__img" src="../../../images/pic_160.png" />
-      </view>
-      <view class='picture_cover_1'>
-        <image class="weui-uploader__img" src="../../../images/pic_160.png" />
-      </view>
-      <view class='picture_cover_1'>
-        <image class="weui-uploader__img" src="../../../images/pic_160.png" />
-      </view>
-      <view class='picture_cover_1'>
-        <image class="weui-uploader__img" src="../../../images/pic_160.png" />
+        <view class='picture_cover_1'  data-index="2" data-name="罗杰2"  bindtap='select'>
+      
+          <image mode="scaleToFill" class="weui-uploader__img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539096253677&di=84933ef3211d84e5a289b6f0153bb885&imgtype=0&src=http%3A%2F%2Fimg4q.duitang.com%2Fuploads%2Fitem%2F201303%2F28%2F20130328091625_t2Yja.jpeg"
+          />
+           <icon  class='icon_select' type="{{active_index==2?'success':'circle'}}" size="23"></icon>
       </view>
     </view>
   </view>

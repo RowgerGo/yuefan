@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-   
+    active_index:1000
   },
 
   /**
@@ -62,6 +62,27 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  select:function(e){
+    let index = e.currentTarget.dataset.index
+    this.setData({
+      active_index:index
+    })
   }
 
 })
+/**
+ * AA    name:aa
+ * 
+ * BB    name:bb
+ * 
+ * CC    name:cc
+ * 
+ * DD    name:dd
+ * 
+ * active_index:0
+ * 
+ * 当某一项的name值跟active_index的值相等，即站起来，否则坐下
+ * 
+ * 
+ */

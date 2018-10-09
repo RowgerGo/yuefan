@@ -22,13 +22,25 @@
   color: white!important;
 }
 .picture_cover{
-  margin-top:20px;
+ margin-top:20px;
  display: flex;
  flex-wrap:wrap;
  width: 100%;
+ background: #db6283;
 
 }
 .weui-uploader__img{
-
  border: 1px solid#db6283!important;
+ width: 100%;
+}
+.picture_cover_1{
+  /* width: 100px; */
+  width: 25%;
+  position: relative;
+
+}
+.icon_select{
+  position: absolute;
+  top:5px;
+  right: 5px;
 }
