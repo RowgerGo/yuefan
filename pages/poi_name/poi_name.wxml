@@ -70,7 +70,7 @@
     </view>
     <view class="weui-btn-area">
       <button class="weui-btn btn_theme_red">选择指定图片生成我的D帖收藏</button>
-      <button class="weui-btn btn_theme_red">返回列表页</button>
+      <button class="weui-btn btn_theme_red" bindtap="openIndex">返回列表页</button>
     </view>
 </view>
 </view>

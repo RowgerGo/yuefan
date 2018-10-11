@@ -104,5 +104,10 @@ Page({
       time: e.detail.value
     })
   },
+  openIndex: function () {
+    wx.navigateTo({
+      url: "../../pages/index/index"
+    })
+  },
 });
   

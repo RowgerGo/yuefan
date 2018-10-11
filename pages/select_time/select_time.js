@@ -47,6 +47,11 @@ Page({
       time: e.detail.value
     })
   },
+  openPick_Place: function () {
+    wx.navigateTo({
+      url: "../../pages/pick_place/pick_place"
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

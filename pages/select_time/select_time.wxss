@@ -22,6 +22,7 @@
   justify-content: center;
   color: #999999;
   margin-bottom: 20px;
+  font-size: 15px;
 }
 .weui-cell__hd{
   display: flex;
@@ -29,11 +30,19 @@
   align-items: center;
  border-bottom: 1px solid #999999;
 }
-.btn_theme_red {
+.btn_theme_black {
   color: #db6283 !important;
   border: 1px solid #db6283 !important;
   margin-left: 20px;
   margin-right: 20px;
+  background-color: #fff !important;
+}
+.btn_theme_red {
+  color: #fff !important;
+  border: 1px solid #db6283 !important;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #DB6283 !important;
 }
 .button-sp-area {
  padding-top: 30px;
