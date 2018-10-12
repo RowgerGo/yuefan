@@ -1,5 +1,8 @@
 //app.js
 App({
+  data:{
+    info:'测试2131'
+  },
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -32,8 +35,34 @@ App({
         }
       }
     })
+    // var add = this.test(1,2) // 1
+    // console.log(add)
+    // var result = this.test(1) //null--2
+    // console.log(result)
+  },
+  test:function(a=0,b=1){
+    // console.log(a)
+    // console.log(b)
+    let r=a+b
+    return r
+  },
+  http_get: function (url = null, data = null, suc, err){
+    wx.request({
+      url: 'https://portal.deedao.com' + url, //仅为示例，并非真实的接口地址
+      data: data,
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        suc(res.data)
+      },
+      fail:function(){
+        err("请求错误")
+      }
+    })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    api_path:'https://portal.deedao.com'
   }
 })

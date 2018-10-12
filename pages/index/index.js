@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    info: '',
     motto: 'Hello World',
     grids: [0, 0, 2, 3, 34, 435, 345, 456, 45645],
     userInfo: {},
@@ -11,7 +12,6 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     showTopTips: false,
-
     date: "2016-09-02",
     time: "12:01",
     day: '',
@@ -21,8 +21,19 @@ Page({
     isAgree: false
   },
   //事件处理函数
-
-
+  onLoad:function(){
+    var data = {
+      x: 1,
+      y: 20000
+    }
+    app.http_get('/config/distanceAndRandom', data, (res) => {
+      this.setData({
+        info: res.data.distance
+      })
+    }, (e) => {
+      console.log(e)
+    })
+  },
   bindDateChange: function(e) {
     let Day = new Date(e.detail.value).getDay()
     switch (Day) {
