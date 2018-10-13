@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+const wechatUtil=app.wechatUtil
 Page({
   data: {
     info: '',
@@ -22,11 +22,12 @@ Page({
   },
   //事件处理函数
   onLoad:function(){
+    wechatUtil.test(1)
     var data = {
-      x: 1,
+      date: this.data.date,
       y: 20000
     }
-    app.http_get('/config/distanceAndRandom', data, (res) => {
+    wechatUtil.http_get('/config/distanceAndRandom', data, (res) => {
       this.setData({
         info: res.data.distance
       })
