@@ -25,6 +25,7 @@ Page({
   onLoad:function(){
     console.log('api_path---------------' + app.globalData.api_path)
     console.log(app.test(2, 2))
+
     wechatUtil.test(1)
     var data = {
       date: this.data.date,
@@ -38,7 +39,13 @@ Page({
       console.log(e)
     })
   },
+  onShow:function(){
+    console.log("-----------------" + app.globalData.openid)
+  },
   bindDateChange: function(e) {
+    console.log("-----------------" + app.globalData.openid)
+    console.log("-----------------" + app.globalData.id)
+    console.log("-----------------" + app.globalData.session_key)
     let Day = new Date(e.detail.value).getDay()
     switch (Day) {
       case 1:
