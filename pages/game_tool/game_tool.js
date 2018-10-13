@@ -1,3 +1,4 @@
+var sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
 // pages/game_tool/game_tool.js
 Page({
 
@@ -7,7 +8,7 @@ Page({
   data: {
     tabs: ["D贴收藏", "我的饭局", "游戏和工具"],
     items: ['收藏1','收藏2'],
-    activeIndex: 0,
+    activeIndex: 1,
     sliderOffset: 0,
     sliderLeft: 0,
   },
@@ -16,7 +17,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        that.setData({
+          sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
+          sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
+        });
+      }
+    });
   },
 
   /**
