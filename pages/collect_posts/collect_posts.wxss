@@ -14,6 +14,7 @@
   font-weight: 400;
 }
 
+
 .page__desc {
   margin-top: 5px;
   color: #888;
@@ -26,4 +27,5 @@
 }
 .btn_theme_red{
   border: 1px solid #ccc!important;
+  background: white!important;
 }
