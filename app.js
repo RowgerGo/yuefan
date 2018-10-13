@@ -17,7 +17,6 @@ App({
     // 登录
     wx.login({
       success: res => {
-        console.log(res.code)
         if (res.code){
           var reqData = {
             userName: "",
@@ -27,7 +26,12 @@ App({
             unionid: wx.getStorageSync("unionid")
           };
           this.wechatUtil.http_post('/api/open/loginUser',reqData,function(s){
-           console.log(s)
+            console.log('-------------------' + s.data.openid )
+            getApp().globalData.openid = s.data.openid 
+            getApp().globalData.id = s.data.id 
+            getApp().globalData.session_key = s.data.session_key 
+            // this.globalData.openid = s.data.openid 
+            console.log(s)
          },function(e){
            console.log(e)
          })
@@ -72,6 +76,7 @@ App({
     city: "蓬莱",
     myId: 0,
     sex: 1,
+    openid:'',
     nickname: "",
     isLoadedCookie: false,
     isLoadedCookieForTest: false,
@@ -81,7 +86,7 @@ App({
     searchStr: {},
     dataSource: 3,
     hasShouQuan: false,
-    sessionKey: "",
+    session_key: "",
     isFromApp: false,
     avatar: "",
     isLoadedLocation: false,
