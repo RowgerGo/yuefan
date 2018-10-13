@@ -14,6 +14,8 @@ const formatTime = date => {
 function req(url, data, cb) {
   wx.request({
     url: DeeDaoConfig.rootDocment + url,
+
+    
     data: data,
     method: 'post',
     header: { 'Content-Type': 'application/x-www-form-urlencoded' },

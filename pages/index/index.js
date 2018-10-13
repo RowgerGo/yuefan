@@ -2,6 +2,7 @@
 //获取应用实例
 const app = getApp()
 const wechatUtil=app.wechatUtil
+import goLogin from '../../utils/login.js'
 Page({
   data: {
     info: '',
@@ -17,11 +18,13 @@ Page({
     day: '',
     countryCodes: ["+86", "+80", "+84", "+87"],
     countryCodeIndex: 0,
-
+    canIUse:'',
     isAgree: false
   },
   //事件处理函数
   onLoad:function(){
+    console.log('api_path---------------' + app.globalData.api_path)
+    console.log(app.test(2, 2))
     wechatUtil.test(1)
     var data = {
       date: this.data.date,
@@ -71,6 +74,16 @@ Page({
     this.setData({
       time: e.detail.value
     })
+  },
+  bindGetUserInfo_join(e) {
+    console.log(e.detail.userInfo)
+    wx.getUserInfo({
+      success: function (res) {
+        console.log(res.userInfo)
+      }
+    })
+  },
+  bindGetUserInfo_share(e) {
+    console.log(e.detail.userInfo)
   }
-
 })
