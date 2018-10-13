@@ -74,7 +74,7 @@
     </view>
   </view>
   <view class="weui-btn-area">
-    <button class="weui-btn btn_theme_black">加入Deedao好友</button>
-    <button class="weui-btn btn_theme_red">分享并邀请微信好友加入</button>
+    <button class="weui-btn btn_theme_black"  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo_join">加入Deedao好友</button>
+    <button class="weui-btn btn_theme_red"  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo_share">分享并邀请微信好友加入</button>
   </view>
 </view>

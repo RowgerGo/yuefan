@@ -14,10 +14,24 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
     // 登录
     wx.login({
       success: res => {
+        console.log(res.code)
+        if (res.code){
+          var reqData = {
+            userName: "",
+            pwd: "",
+            loginType: "xcx_login",
+            wxCode: res.code,
+            unionid: wx.getStorageSync("unionid")
+          };
+          this.wechatUtil.http_post('/api/open/loginUser',reqData,function(s){
+           console.log(s)
+         },function(e){
+           console.log(e)
+         })
+        }
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
@@ -41,10 +55,6 @@ App({
         }
       }
     })
-    // var add = this.test(1,2) // 1
-    // console.log(add)
-    // var result = this.test(1) //null--2
-    // console.log(result)
   },
   test:function(a=0,b=1){
     // console.log(a)
@@ -54,6 +64,27 @@ App({
   },
   globalData: {
     userInfo: null,
-    api_path:'https://portal.deedao.com'
+    api_path:'https://portal.deedao.com',
+    lat: 31.137603,
+    lng: 125.705566,
+    addr: "",
+    building: "",
+    city: "蓬莱",
+    myId: 0,
+    sex: 1,
+    nickname: "",
+    isLoadedCookie: false,
+    isLoadedCookieForTest: false,
+    sessionId: "",
+    tmpCounter: 0,
+    distanceLast: 500,
+    searchStr: {},
+    dataSource: 3,
+    hasShouQuan: false,
+    sessionKey: "",
+    isFromApp: false,
+    avatar: "",
+    isLoadedLocation: false,
+    entryUrl: ""
   }
 })

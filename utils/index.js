@@ -142,6 +142,22 @@ class wechatUtil {
       }
     })
  }
+  http_post(url = null, data = null, suc, err) {
+    wx.request({
+      url: 'https://portal.deedao.com' + url, //仅为示例，并非真实的接口地址
+      data: data,
+      method:'POST',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        suc(res.data)
+      },
+      fail: function () {
+        err("请求错误")
+      }
+    })
+  }
 }
 
 export default wechatUtil
