@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/game_tool/game_tool",
     "pages/index/index",
     "pages/logs/logs",
     "pages/join_select/join_select",
     "pages/post_invitation/post_invitation",
     "pages/add_pictures/add_pictures",
-    "pages/game_tool/game_tool",
     "pages/select_friends/select_friends",
     "pages/view_more/view_more",
     "pages/collect_posts/collect_posts",
