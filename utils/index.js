@@ -109,6 +109,39 @@ class wechatUtil {
     }
     return relativePath
   }
+  transfer_date_to_day(date){
+    let Day = new Date(date).getDay()
+    console.log(Day)
+    switch (Day) {
+      case 1:
+        Day = "一"
+        break;
+      case 2:
+        Day = "二"
+        break;
+      case 3:
+        Day = "三"
+        break;
+      case 4:
+        Day = "四"
+        break;
+      case 5:
+        Day = "五"
+        break;
+      case 6:
+        Day = "六"
+        break;
+      case 7:
+        Day = "天"
+        break;
+      case 0:
+        Day = "天"
+        break;
+      default:
+        Day = ""
+    }
+    return Day
+  }
   getTimestamp() {
     return Date.parse(new Date())
   }
@@ -142,19 +175,24 @@ class wechatUtil {
       }
     })
  }
-  http_post(url = null, data = null, suc, err) {
+  http_post(url = null, data = null,suc, err,header={}) {
     wx.request({
       url: 'https://portal.deedao.com' + url, //仅为示例，并非真实的接口地址
       data: data,
       method:'POST',
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
+      header: header,
       success(res) {
-        suc(res.data)
+       
+        if (res.data.status==1001){
+          err(res.data)
+        } else if (res.data.status== 400){
+          err(res.data)
+        }else{
+          suc(res.data)
+        }
       },
-      fail: function () {
-        err("请求错误")
+      fail: function (e) {
+        err(e)
       }
     })
   }

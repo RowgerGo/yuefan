@@ -31,6 +31,13 @@
 		"miniprogram": {
 			"current": -1,
 			"list": [
+        {
+          "id": 0,
+          "name": "首页",
+          "pathName": "pages/index/index",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
 				{
 					"id": 0,
 					"name": "参与选项",
@@ -40,7 +47,7 @@
 				},
 				{
 					"id": 1,
-					"name": "发布邀请",
+					"name": "发布邀请-定主题",
 					"pathName": "pages/post_invitation/post_invitation",
 					"query": "scene=authorId,546",
 					"scene": "1048"
@@ -52,14 +59,7 @@
 					"query": "scene=authorId,546",
 					"scene": "1048"
 				},
-				{
-					"id": 3,
-					"name": "游戏和工具",
-					"pathName": "pages/game_tool/game_tool",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
+        {
 					"id": 4,
 					"name": "选择好友",
 					"pathName": "pages/select_friends/select_friends",
@@ -142,7 +142,36 @@
 					"pathName": "pages/poi_name_name_name/poi_name_name_name",
 					"query": "scene=authorId,546",
 					"scene": "1048"
-				}
+				},
+        {
+          "id":17,
+          "name": "从地图中选择地点",
+          "pathName":"pages/select_from_map/select_from_map",
+          "scene": "1048"
+        },
+        {
+          "id": 17,
+          "name": "从城市切换中选择地点",
+          "pathName": "pages/select_from_switch/select_from_switch",
+          "scene": "1048"
+        },
+        {
+          "id": 17,
+          "name": "我的饭局-发布邀请",
+          "pathName": "pages/post_invitation_publish/post_invitation_publish",
+          "scene": "1048"
+        },{
+          "id": 18,
+          "name": "查看DeeDao约贴",
+          "pathName": "pages/post_invitation_share/post_invitation_share",
+          "scene": "1048"
+        },
+        {
+          "id": 19,
+          "name": "腾讯地图",
+          "pathName": "pages/tencent_map/tencent_map",
+          "scene": "1048"
+        }
 			]
 		}
 	}

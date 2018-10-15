@@ -1,0 +1,5 @@
+<!--pages/tencent_map/tencent_map.wxml-->
+<!--绑定点击事件-->
+<button bindtap="driving">路线规划</button>
+<!--地图容器-->
+<map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>

@@ -1,1 +1,7 @@
-{}
+{
+  "usingComponents":{
+    "collect_item": "../../components/collect_item/collect_item",
+    "dinner_party":"../../components/dinner_party/dinner_party",
+    "game_tool_header": "../../components/game_tool_header/game_tool_header"
+  }
+}

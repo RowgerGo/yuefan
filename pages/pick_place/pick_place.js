@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    address:'',
+    latitude: '',
+    longitude: '',
+    poi_name:''
   },
 
   /**
@@ -62,5 +65,40 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  navigateTo_map:function(){
+    wx.navigateTo({
+      url: "../../pages/select_from_map/select_from_map"
+    })
+  },
+  navigateTo_selectTheme:function(e){
+    var _this = this
+    const type = e.currentTarget.dataset.type
+    if(type==1){
+
+      wx.getStorage({
+        key: 'invatation_info',
+        success: function (res) {
+          const data = res.data
+          data.address = _this.data.address
+          data.latitude = _this.data.latitude
+          data.longitude = _this.data.longitude
+          data.poi_name = _this.data.poi_name
+
+          wx.setStorage({//存储到本地
+            key: "invatation_info",
+            data: data
+          })
+        }
+      })
+      wx.navigateTo({
+        url: "../../pages/post_invitation/post_invitation"
+      })
+    }else{
+      wx.navigateTo({
+        url: "../../pages/post_invitation/post_invitation"
+      })
+    }
+  
   }
 })

@@ -1,0 +1,53 @@
+/* pages/select_from_map/select_from_map.wxss *//* pages/enter_map/enter_map.wxss */
+.weui-search-bar__cancel-btn{
+  color: #db6283;
+}
+.map{
+  width: 100%;
+  height: 600rpx;
+}
+
+
+.btn_style_2{
+   color: #db6283 !important;
+   border-left: 1px solid #ccc;
+}
+.weui-form-preview__ft{
+  display: flex;
+  justify-content: space-around;
+}
+.weui-cell__bd_1{
+  color: #999999;
+  font-size:28rpx;
+}
+.weui-cell{
+  border-bottom: 1px solid#999999;
+}
+.end_style{
+  display: flex;
+  justify-content: center;
+  font-size: 24rpx;
+  margin-top: 10px;
+
+}
+.end_style_2{
+  color: #db6283;
+}
+.picture_cover{
+  display: flex!important;
+  flex-direction: column-reverse!important;
+
+  }
+  .map_title{
+   font-size: 28rpx!important;
+
+  }
+  .map_des{
+    font-size: 22rpx!important;
+    color: #C8C5C5;
+  }
+  .btn_style,.btn_style_2{
+    font-size: 30rpx;
+    width: 50%;
+    text-align: center;
+  }

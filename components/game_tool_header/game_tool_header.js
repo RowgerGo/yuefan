@@ -18,6 +18,14 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    getUserInfoFun:function(){
+      wx.navigateTo({
+        url: "../../pages/select_time/select_time"
+      })
 
-  }
+
+      console.log(1233)
+    }
+  },
+ 
 })

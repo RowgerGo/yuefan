@@ -1,12 +1,20 @@
 //app.js
 import wechatUtil from './utils/index.js';
-
+var mapCtx0;
+// 引入SDK核心类 
+var QQMapWX = require('./libs/qqmap-wx-jssdk.js');
+// 实例化API核心类 
+var demo = new QQMapWX({
+  key: 'VLGBZ-MVGK3-JZS3T-YWHZV-N55O3-LBFNG' // 必填
+});
 
 App({
   data:{
     info:'测试2131'
   },
   onLaunch: function () {
+   
+
     //
     this.wechatUtil=new wechatUtil()
 
@@ -14,31 +22,8 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-    // 登录
-    wx.login({
-      success: res => {
-        if (res.code){
-          var reqData = {
-            userName: "",
-            pwd: "",
-            loginType: "xcx_login",
-            wxCode: res.code,
-            unionid: wx.getStorageSync("unionid")
-          };
-          this.wechatUtil.http_post('/api/open/loginUser',reqData,function(s){
-            console.log('-------------------' + s.data.openid )
-            getApp().globalData.openid = s.data.openid 
-            getApp().globalData.id = s.data.id 
-            getApp().globalData.session_key = s.data.session_key 
-            // this.globalData.openid = s.data.openid 
-            console.log(s)
-         },function(e){
-           console.log(e)
-         })
-        }
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+    // 获取用户的位置信息
+    this.get_location()
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -60,6 +45,33 @@ App({
       }
     })
   },
+  get_location:function(){
+    // 页面加载获取当前定位位置为地图的中心坐标
+    var _this = this;
+    wx.getLocation({
+      success(data) {
+        if (data) {
+          _this.reverseGeocoder(data.latitude, data.longitude)
+        }
+      }
+    });
+  },
+  reverseGeocoder: function (latitude, longitude) {
+    var _this = this
+    demo.reverseGeocoder({
+      type: 'gcj02',
+      location: {
+        latitude: latitude,
+        longitude: longitude
+      },
+      success: function (res) {
+        getApp().globalData.lat = latitude;
+        getApp().globalData.lng = longitude;
+        getApp().globalData.address = res.result.address;
+        getApp().globalData.recommend = res.result.formatted_addresses.recommend
+      }
+    });
+  },
   test:function(a=0,b=1){
     // console.log(a)
     // console.log(b)
@@ -69,9 +81,10 @@ App({
   globalData: {
     userInfo: null,
     api_path:'https://portal.deedao.com',
-    lat: 31.137603,
-    lng: 125.705566,
-    addr: "",
+    lat: '',
+    lng: '',
+    address: "",
+    recommend:"",
     building: "",
     city: "蓬莱",
     myId: 0,
@@ -90,6 +103,7 @@ App({
     isFromApp: false,
     avatar: "",
     isLoadedLocation: false,
-    entryUrl: ""
+    entryUrl: "",
+    rongcloudtoken:''
   }
 })

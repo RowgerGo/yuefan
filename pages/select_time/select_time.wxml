@@ -20,7 +20,7 @@
     </view>
      <view class="button-sp-area">
     <button class="weui-btn btn_theme_red" bindtap="openPick_Place">下一步</button>
-    <button class="weui-btn btn_theme_black" >取消退出</button>
+    <button  class="weui-btn btn_theme_black" bindtap="navigato_goback">取消退出</button>
     </view>
   </view>
 </view>
