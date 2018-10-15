@@ -145,7 +145,7 @@ class wechatUtil {
   http_post(url = null, data = null,suc, err,header={}) {
     wx.request({
       url: 'https://portal.deedao.com' + url, //仅为示例，并非真实的接口地址
-      data: data,
+      data: JSON.stringify(data),
       method:'POST',
       header: header,
       success(res) {
