@@ -15,30 +15,7 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
     // 登录
-    wx.login({
-      success: res => {
-        if (res.code){
-          var reqData = {
-            userName: "",
-            pwd: "",
-            loginType: "xcx_login",
-            wxCode: res.code,
-            unionid: wx.getStorageSync("unionid")
-          };
-          this.wechatUtil.http_post('/api/open/loginUser',reqData,function(s){
-            console.log('-------------------' + s.data.openid )
-            getApp().globalData.openid = s.data.openid 
-            getApp().globalData.id = s.data.id 
-            getApp().globalData.session_key = s.data.session_key 
-            // this.globalData.openid = s.data.openid 
-            console.log(s)
-         },function(e){
-           console.log(e)
-         })
-        }
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -90,6 +67,7 @@ App({
     isFromApp: false,
     avatar: "",
     isLoadedLocation: false,
-    entryUrl: ""
+    entryUrl: "",
+    rongcloudtoken:''
   }
 })

@@ -1,5 +1,7 @@
 var sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
 // pages/game_tool/game_tool.js
+const app = getApp()
+const wechatUtil=app.wechatUtil
 Page({
 
   /**
@@ -26,20 +28,22 @@ Page({
         });
       }
     });
+    this._login()
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+   
+    
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**
@@ -81,5 +85,56 @@ Page({
       sliderOffset: e.currentTarget.offsetLeft,
       activeIndex: e.currentTarget.id
     });
+  },
+  _login: function(){
+    var _this=this
+    var self = this;
+    wx.login({
+      success: res => {
+        if (res.code) {
+          var reqData = {
+            userName: "",
+            pwd: "",
+            loginType: "xcx_login",
+            wxCode: res.code,
+            unionid: wx.getStorageSync("unionid")
+          };
+          wechatUtil.http_post('/api/open/loginUser', reqData, function (s) {
+            wx.setStorageSync('rongcloudtoken', s.data.rongcloudtoken);
+            console.log('-------------------' + s.data.openid)
+            getApp().globalData.openid = s.data.openid
+            getApp().globalData.id = s.data.id
+            getApp().globalData.session_key = s.data.session_key
+            getApp().globalData.rongcloudtoken = s.data.rongcloudtoken
+            self.get_my_collect(1, 2)
+            // this.globalData.openid = s.data.openid 
+            console.log(s)
+          }, function (e) {
+            console.log(e)
+          })
+        }
+        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+      }
+    })
+  },
+  get_my_collect: (type = 1, rongcloudtoken)=>{
+    // var reqData = {
+    //   dataSources:2,
+    //   pageSize: 5
+    // };
+    // var header={
+    //   'content-type': 'application/json', // 默认值
+    //   'Cookie': 'JSESSIONID=' + app.globalData.rongcloudtoken
+    // }
+  
+    // wechatUtil.http_post('/post/search/selectPostBySearch', reqData, function (s) {
+    //   console.log(s)
+    //   // this.globalData.openid = s.data.openid 
+    //   console.log('getApp().globalData.rongcloudtoken' + getApp().globalData.rongcloudtoken)
+    //   console.log(s)
+    // }, function (e) {
+    //   console.log(e)
+  
+    // }, header)
   }
 })

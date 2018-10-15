@@ -1,4 +1,6 @@
 // pages/post_invitation/post_invitation.js
+const app = getApp()
+const wechatUtil = app.wechatUtil
 Page({
 
   /**
@@ -12,7 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.get_my_collect()
   },
 
   /**
@@ -62,5 +64,25 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  get_my_collect: (type = 1) => {
+    var reqData = {
+      dataSources: 2,
+      pageSize: 5
+    };
+    var header = {
+      'content-type': 'application/json', // 默认值
+      'Cookie': 'JSESSIONID=' + app.globalData.rongcloudtoken
+    }
+
+    wechatUtil.http_post('/post/search/selectPostBySearch', reqData, function (s) {
+      console.log(s)
+      // this.globalData.openid = s.data.openid 
+      console.log('getApp().globalData.rongcloudtoken' + getApp().globalData.rongcloudtoken)
+      console.log(s)
+    }, function (e) {
+      console.log(e)
+
+    }, header)
   }
 })
