@@ -171,6 +171,12 @@
           "name": "腾讯地图",
           "pathName": "pages/tencent_map/tencent_map",
           "scene": "1048"
+        },
+        {
+          "id": 20,
+          "name": "POI信息页",
+          "pathName": "pages/poi_infor/poi_infor",
+          "scene": "1048"
         }
 			]
 		}
