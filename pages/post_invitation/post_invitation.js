@@ -95,7 +95,7 @@ Page({
   upload_image:function(){
     var _this=this
     wx.chooseImage({
-      count: 9,
+      count: 1,
       sizeType: ['original', 'compressed'],
       sourceType: ['album', 'camera'],
       success(res) {
