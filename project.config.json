@@ -31,6 +31,13 @@
 		"miniprogram": {
 			"current": -1,
 			"list": [
+        {
+          "id": 0,
+          "name": "首页",
+          "pathName": "pages/index/index",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
 				{
 					"id": 0,
 					"name": "参与选项",
@@ -52,14 +59,7 @@
 					"query": "scene=authorId,546",
 					"scene": "1048"
 				},
-				{
-					"id": 3,
-					"name": "游戏和工具",
-					"pathName": "pages/game_tool/game_tool",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
+        {
 					"id": 4,
 					"name": "选择好友",
 					"pathName": "pages/select_friends/select_friends",
@@ -153,6 +153,12 @@
           "id": 17,
           "name": "从城市切换中选择地点",
           "pathName": "pages/select_from_switch/select_from_switch",
+          "scene": "1048"
+        },
+        {
+          "id": 17,
+          "name": "我的饭局-发布邀请",
+          "pathName": "pages/post_invitation_publish/post_invitation_publish",
           "scene": "1048"
         }
 			]

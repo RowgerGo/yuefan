@@ -1,11 +1,11 @@
-// pages/pick_place/pick_place.js
+// pages/index_bak/index_bak.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    address:''
+
   },
 
   /**
@@ -62,26 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  navigateTo_map:function(){
-    wx.navigateTo({
-      url: "../../pages/select_from_map/select_from_map"
-    })
-  },
-  navigateTo_selectTheme:function(type){
-    var _this = this
-    if(type==1){
-
-      wx.getStorage({
-        key: 'invatation_info',
-        success: function (res) {
-          console.log(res.data)
-        }
-      })
-      wx.navigateTo({
-        url: "../../pages/post_invitation/post_invitation"
-      })
-    }
-  
   }
 })

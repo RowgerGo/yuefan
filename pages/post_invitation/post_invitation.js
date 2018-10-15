@@ -88,6 +88,7 @@ Page({
     }, header)
   },
   navigateTo_selectTheme:function(){
+   
     wx.navigateTo({
       url: "../../pages/select_theme/select_theme"
     })
@@ -107,5 +108,26 @@ Page({
         })
       }
     })
+  },
+  navigateTo_publish:function(){
+    wx.getStorage({
+      key: 'invatation_info',
+      success: function (res) {
+        console.log(res.data)
+        const data=res.data
+        data.theme_cover="1212"
+        data.theme_title = "1212"
+
+
+        wx.setStorage({//存储到本地
+          key: "invatation_info",
+          data: data
+        })
+        wx.navigateTo({
+          url: "../../pages/pick_place/pick_place"
+        })
+      }
+    })
   }
+
 })

@@ -71,20 +71,6 @@ Page({
   onShow: function () {
 
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
   navigato_goback:function(){
     wx.navigateBack({ changed: true });//返回上一页
   }
