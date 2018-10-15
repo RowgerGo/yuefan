@@ -19,12 +19,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.removeStorage({
-      key: 'invatation_info',
-      success: function (res) {
-        console.log(res.data)
-      }
-    })
+    //开发阶段注释，上线需要放开
+    // wx.removeStorage({
+    //   key: 'invatation_info',
+    //   success: function (res) {
+    //     console.log(res.data)
+    //   }
+    // })
     var that = this;
     wx.getSystemInfo({
       success: function (res) {
@@ -113,8 +114,6 @@ Page({
             getApp().globalData.session_key = s.data.session_key
             getApp().globalData.rongcloudtoken = s.data.rongcloudtoken
             self.get_my_collect(1, s.data.rongcloudtoken)
-            // this.globalData.openid = s.data.openid 
-            console.log(s)
           }, function (e) {
             console.log(e)
           })
@@ -138,10 +137,10 @@ Page({
     }
   
     wechatUtil.http_post('/post/search/selectPostBySearch', JSON.stringify(reqData), function (s) {
-      console.log(s)
+      //console.log(s)
       // this.globalData.openid = s.data.openid 
-      console.log('getApp().globalData.rongcloudtoken' + getApp().globalData.rongcloudtoken)
-      console.log(s)
+      //console.log('getApp().globalData.rongcloudtoken' + getApp().globalData.rongcloudtoken)
+      //console.log(s)
     }, function (e) {
       console.log(e)
   

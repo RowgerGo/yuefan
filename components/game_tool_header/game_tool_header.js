@@ -18,6 +18,9 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
-  }
+    getUserInfoFun:function(){
+      console.log(1233)
+    }
+  },
+ 
 })

@@ -7,7 +7,8 @@ Page({
   data: {
     address:'',
     latitude: '',
-    longitude: ''
+    longitude: '',
+    poi_name:''
   },
 
   /**
@@ -82,6 +83,7 @@ Page({
           data.address = _this.data.address
           data.latitude = _this.data.latitude
           data.longitude = _this.data.longitude
+          data.poi_name = _this.data.poi_name
 
           wx.setStorage({//存储到本地
             key: "invatation_info",

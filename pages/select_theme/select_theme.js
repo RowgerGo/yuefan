@@ -6,14 +6,20 @@ Page({
    */
   data: {
     theme:'',
-    inputValue:''
+    inputValue:'',
+    from:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const from = options.from
+    if (from){
+      this.setData({
+        from:from
+      })
+    }
   },
 
   /**
@@ -80,14 +86,34 @@ Page({
     })
   },
   confirm_click:function(){
-    let pages = getCurrentPages();//当前页面
-    let prevPage = pages[pages.length - 2];//上一页面
-    prevPage.setData({//直接给上移页面赋值
-      inputValue: this.data.theme+this.data.inputValue,
-    });
-    console.log(this.data.inputValue)
-    wx.navigateBack({//返回
-      delta: 1
-    })
+    if(this.data.from=="publish"){
+      const _this=this
+      wx.getStorage({
+        key: 'invatation_info',
+        success: function (res) {
+          console.log(res.data)
+          const data = res.data
+          data.theme_title = _this.data.theme + _this.data.inputValue,
+
+          wx.setStorage({ //存储到本地
+            key: "invatation_info",
+            data: data
+          })
+          wx.navigateTo({
+            url: "../../pages/post_invitation_publish/post_invitation_publish"
+          })
+        }
+      })
+    }else{
+      let pages = getCurrentPages();//当前页面
+      let prevPage = pages[pages.length - 2];//上一页面
+      prevPage.setData({//直接给上移页面赋值
+        inputValue: this.data.theme + this.data.inputValue,
+      });
+      console.log(this.data.inputValue)
+      wx.navigateBack({//返回
+        delta: 1
+      })
+    }
   }
 })

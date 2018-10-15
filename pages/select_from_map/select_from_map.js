@@ -26,7 +26,8 @@ Page({
     }],
     markers: [],
     address:'',
-    recommend:''
+    recommend:'',
+    from: ''
   },
   showInput: function() {
     this.setData({
@@ -54,6 +55,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    // 判断来源页
+    const from = options.from
+    if (from) {
+      this.setData({
+        from: from
+      })
+    }
     // 页面加载获取当前定位位置为地图的中心坐标
     var _this = this;
     wx.getLocation({
@@ -163,16 +171,40 @@ Page({
     });
   },
   navigato_back:function(){
-    let pages = getCurrentPages();//当前页面
-    let prevPage = pages[pages.length - 2];//上一页面
-    prevPage.setData({//直接给上移页面赋值
-      address: this.data.address,
-      latitude: this.data.latitude,
-      longitude: this.data.longitude
-    });
-    wx.navigateBack({//返回
-      delta: 1
-    })
+   if(this.data.from){
+     const _this = this
+     wx.getStorage({
+       key: 'invatation_info',
+       success: function (res) {
+         console.log(res.data)
+         const data = res.data
+        data.address = _this.data.address,
+        data.latitude = _this.data.latitude,
+        data.longitude = _this.data.longitude,
+        data.poi_name = _this.data.recommend,
+
+           wx.setStorage({ //存储到本地
+             key: "invatation_info",
+             data: data
+           })
+         wx.navigateTo({
+           url: "../../pages/post_invitation_publish/post_invitation_publish"
+         })
+       }
+     })
+   }else{
+     let pages = getCurrentPages();//当前页面
+     let prevPage = pages[pages.length - 2];//上一页面
+     prevPage.setData({//直接给上移页面赋值
+       address: this.data.address,
+       latitude: this.data.latitude,
+       longitude: this.data.longitude,
+       poi_name: this.data.recommend
+     });
+     wx.navigateBack({//返回
+       delta: 1
+     })
+   }
   },
   navigato_switchCity: function() {
     wx.navigateTo({

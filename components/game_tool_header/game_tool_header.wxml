@@ -9,7 +9,7 @@
     <view class="page__title">我的饭局</view>
     <view class='page_desc'>
     <view class="page_desc_1">在这里发起或参与饭局</view>
-    <navigator url="../../pages/select_time/select_time"> <button class="weui-btn mini-btn" type="default" size="mini">组局+</button></navigator>
+    <button open-type="getUserInfo" class="weui-btn mini-btn" type="default" bindgetuserinfo="getUserInfoFun" size="mini">组局+</button>
     </view>
   </view>
   <view wx:if="{{activeIndex==2}}">

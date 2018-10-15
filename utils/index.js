@@ -111,6 +111,7 @@ class wechatUtil {
   }
   transfer_date_to_day(date){
     let Day = new Date(date).getDay()
+    console.log(Day)
     switch (Day) {
       case 1:
         Day = "一"
@@ -131,7 +132,10 @@ class wechatUtil {
         Day = "六"
         break;
       case 7:
-        Day = "七"
+        Day = "天"
+        break;
+      case 0:
+        Day = "天"
         break;
       default:
         Day = ""
