@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    theme:''
+    theme:'',
+    inputValue:''
   },
 
   /**
@@ -72,6 +73,21 @@ Page({
     }else{
       console.log(111111111111111)
     }
-  
+  },
+  bindKeyInput: function (e) {
+    this.setData({
+      inputValue: e.detail.value
+    })
+  },
+  confirm_click:function(){
+    let pages = getCurrentPages();//当前页面
+    let prevPage = pages[pages.length - 2];//上一页面
+    prevPage.setData({//直接给上移页面赋值
+      inputValue: this.data.theme+this.data.inputValue,
+    });
+    console.log(this.data.inputValue)
+    wx.navigateBack({//返回
+      delta: 1
+    })
   }
 })

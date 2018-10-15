@@ -40,7 +40,7 @@
 				},
 				{
 					"id": 1,
-					"name": "发布邀请",
+					"name": "发布邀请-定主题",
 					"pathName": "pages/post_invitation/post_invitation",
 					"query": "scene=authorId,546",
 					"scene": "1048"
@@ -147,6 +147,12 @@
           "id":17,
           "name": "从地图中选择地点",
           "pathName":"pages/select_from_map/select_from_map",
+          "scene": "1048"
+        },
+        {
+          "id": 17,
+          "name": "从城市切换中选择地点",
+          "pathName": "pages/select_from_switch/select_from_switch",
           "scene": "1048"
         }
 			]

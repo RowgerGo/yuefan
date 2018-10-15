@@ -4,7 +4,7 @@
         <text class="post_title_item">主题</text>
         <view class="post_title_item">
            <text class="select_laber">{{theme}}</text>
-           <input class="weui-input" placeholder=""/>
+           <input class="weui-input" placeholder="" bindinput="bindKeyInput"/>
         </view>
     </view>
     
@@ -14,7 +14,7 @@
           <button bindtap="theme_select" hover-class='tap_style' data-theme='公司团建' class="weui-btn" type="primary" plain="true">公司团建</button>
           <button bindtap="theme_select" hover-class='tap_style' data-theme='旅游' class="weui-btn" type="primary" plain="true">旅游</button>
           <button bindtap="theme_select" hover-class='tap_style' data-theme='滑雪' class="weui-btn" type="primary" plain="true">滑雪</button>
-          <button bindtap="theme_select" hover-class='tap_style' data-theme='' class="weui-btn" type="primary" plain="true">确定</button>
+          <button bindtap="confirm_click" hover-class='tap_style' data-theme='' class="weui-btn" type="primary" plain="true">确定</button>
         </view>
   </view>
  

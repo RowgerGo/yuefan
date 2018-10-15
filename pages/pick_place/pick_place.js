@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    address:''
   },
 
   /**
@@ -66,6 +66,11 @@ Page({
   navigateTo_map:function(){
     wx.navigateTo({
       url: "../../pages/select_from_map/select_from_map"
+    })
+  },
+  navigateTo_selectTheme:function(){
+    wx.navigateTo({
+      url: "../../pages/post_invitation/post_invitation"
     })
   }
 })

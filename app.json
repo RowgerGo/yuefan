@@ -18,7 +18,8 @@
     "pages/select_cover/select_cover",
     "pages/enter_map/enter_map",
     "pages/poi_name_name_name/poi_name_name_name",
-    "pages/select_from_map/select_from_map"
+    "pages/select_from_map/select_from_map",
+    "pages/select_from_switch/select_from_switch"
   ],
   "window": {
     "backgroundTextStyle": "light",

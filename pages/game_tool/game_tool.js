@@ -106,7 +106,7 @@ Page({
             getApp().globalData.id = s.data.id
             getApp().globalData.session_key = s.data.session_key
             getApp().globalData.rongcloudtoken = s.data.rongcloudtoken
-            self.get_my_collect(1, 2)
+            self.get_my_collect(1, s.data.rongcloudtoken)
             // this.globalData.openid = s.data.openid 
             console.log(s)
           }, function (e) {
@@ -118,23 +118,27 @@ Page({
     })
   },
   get_my_collect: (type = 1, rongcloudtoken)=>{
-    // var reqData = {
-    //   dataSources:2,
-    //   pageSize: 5
-    // };
-    // var header={
-    //   'content-type': 'application/json', // 默认值
-    //   'Cookie': 'JSESSIONID=' + app.globalData.rongcloudtoken
-    // }
+    var reqData = {
+      sortType:1,
+      dataSources:2,
+      type:1,
+      pageSize: 5,
+      pageStart:1,
+      recursionFlg:1
+    };
+    var header={
+      'content-type': 'application/json;charset=utf-8', // 默认值
+      'Cookie': 'JSESSIONID=' + app.globalData.rongcloudtoken
+    }
   
-    // wechatUtil.http_post('/post/search/selectPostBySearch', reqData, function (s) {
-    //   console.log(s)
-    //   // this.globalData.openid = s.data.openid 
-    //   console.log('getApp().globalData.rongcloudtoken' + getApp().globalData.rongcloudtoken)
-    //   console.log(s)
-    // }, function (e) {
-    //   console.log(e)
+    wechatUtil.http_post('/post/search/selectPostBySearch', JSON.stringify(reqData), function (s) {
+      console.log(s)
+      // this.globalData.openid = s.data.openid 
+      console.log('getApp().globalData.rongcloudtoken' + getApp().globalData.rongcloudtoken)
+      console.log(s)
+    }, function (e) {
+      console.log(e)
   
-    // }, header)
+    }, header)
   }
 })

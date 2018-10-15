@@ -7,13 +7,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    inputValue:'',
+    tempFilePaths:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(this.data.inputValue)
     this.get_my_collect()
   },
 
@@ -84,5 +86,26 @@ Page({
       console.log(e)
 
     }, header)
+  },
+  navigateTo_selectTheme:function(){
+    wx.navigateTo({
+      url: "../../pages/select_theme/select_theme"
+    })
+  },
+  upload_image:function(){
+    var _this=this
+    wx.chooseImage({
+      count: 9,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success(res) {
+        // tempFilePath可以作为img标签的src属性显示图片
+        const tempFilePaths = res.tempFilePaths
+        console.log(tempFilePaths)
+        _this.setData({
+          tempFilePaths: tempFilePaths
+        })
+      }
+    })
   }
 })

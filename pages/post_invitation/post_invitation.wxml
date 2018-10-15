@@ -7,13 +7,14 @@
     <view class="page__bd">
         <view class="weui-form-preview">
             <view class="theme_cover">主题及封面</view>
-            <view class="weui-form-preview__hd post_title">    
+            <view class="weui-form-preview__hd post_title" bindtap='navigateTo_selectTheme'>    
               <text class="post_title_item">主题</text>
-              <text class="post_title_item">约饭</text>
+              <text class="post_title_item_inputValue">{{inputValue}}</text>
             </view>
             <view class="weui-form-preview__bd">
-               <view class="select_cover">
-                <text>点击指定请帖封面</text>
+               <view class="select_cover" bindtap='upload_image'>
+                 <text  hidden="{{tempFilePaths==''?false:true}}">点击指定请帖封面</text>
+                 <image class='theme_images' mode="aspectFit" hidden="{{tempFilePaths==''?true:false}}" src='{{tempFilePaths}}'></image>
                </view>
             </view>
             <view class="weui-form-preview__ft">
