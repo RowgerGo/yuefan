@@ -1,52 +1,74 @@
 /* pages/post_invitation/post_invitation.wxss */
-.page__title{
-  font-size: 20pt;
-  color: #000000;
-  margin-left: 40px;
+
+.page__hd {
+  padding: 40px;
 }
-.page__desc{
-  font-size: 12pt!important;
-   color: #B9B5B5;
-  margin-left: 40px;
+
+.page__title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
 }
-.page__bd{
+
+.page__desc {
+  margin-top: 5px;
+  color: #888;
+  text-align: left;
+  font-size: 14px;
+}
+
+.page__bd {
   margin-top: 50px;
 }
-.post_title{
+
+.post_title {
   display: flex;
-  height: 40pt!important;
+  height: 40pt !important;
 }
-.post_title_item{
+
+.post_title_item {
   width: 120px;
   text-align: left;
   font-size: 14pt;
 }
-.post_title_item_inputValue{
-   width: 100%;
+
+.post_title_item_inputValue {
+  width: 100%;
   text-align: left;
   font-size: 14pt;
 }
-.theme_cover{
+
+.theme_cover {
   width: 100%;
   text-align: center;
   font-size: 12pt;
-  color: #AEADAD;
+  color: #aeadad;
   height: 30px;
   line-height: 30px;
-  margin-top: 40px!important;
+  margin-top: 40px !important;
 }
-.select_cover{
+
+.select_cover {
   width: 100%;
   height: 195px;
-  background: #EBEBEB;
+  background: #ebebeb;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #CAC8C8;
+  color: #cac8c8;
   position: relative;
 }
-.theme_images{
+
+.theme_images {
   width: 100%;
   height: 195px;
+}
+
+.weui-form-preview__btn_primary {
+  color: white !important;
+  border: 1px solid #db6283 !important;
+  margin-top: 30rpx;
+  background-color: #db6283 !important;
+  margin-bottom:40rpx;
 }

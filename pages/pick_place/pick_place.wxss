@@ -1,47 +1,56 @@
 /* pages/pick_place/pick_place.wxss */
+
+.page__hd {
+  padding: 40px;
+}
+
 .page__title {
-  width: 40x;
-  height: 30px;
+  text-align: left;
   font-size: 20px;
-  margin-left: 40px;
+  font-weight: 400;
 }
 
 .page__desc {
-  margin-left: 40px;
-  margin-top: 15px;
-  font-size: 35rpx;
-  color: #999999;
+  margin-top: 5px;
+  color: #888;
+  text-align: left;
+  font-size: 14px;
 }
-.place{
+
+.place {
   border-top: 1px solid#999999;
   margin-top: 40px;
   width: 100%;
   display: flex;
   justify-content: center;
-  color: #999999;
- padding-top: 5px;
+  color: #999;
+  padding-top: 5px;
 }
-.pick_place{
-   border-bottom: 1px solid#999999;
-   margin-left: 20px;
-   margin-top: 20px;
+
+.pick_place {
+  border-bottom: 1px solid#999999;
+  margin-left: 20px;
+  margin-top: 20px;
 }
+
 .btn_theme_red {
-  color: white!important;
+  color: white !important;
   border: 1px solid #db6283 !important;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: #db6283!important;
+  background-color: #db6283 !important;
 }
+
 .button-sp-area {
- padding-top: 30px;
+  padding-top: 30px;
   width: 100%;
-  border-top: 1px solid #999999;
+  border-top: 1px solid #999;
   margin-top: 20px;
 }
+
 .btn_theme_black {
   color: black !important;
-  border: 1px solid #999999!important;
+  border: 1px solid #999 !important;
   margin-left: 10px;
   margin-right: 10px;
 }

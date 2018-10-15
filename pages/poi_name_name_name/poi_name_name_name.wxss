@@ -42,10 +42,6 @@
   padding-bottom: 40px;
 }
 
-.btn_theme_red {
-  border: 1px solid #ccc !important;
-}
-
 .input_date_time {
   display: flex;
   justify-content: space-between;
@@ -71,13 +67,6 @@
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.btn_theme_red {
-  border: 1px solid #d9d9d9 !important;
-  width: 90%;
-  margin-top: 30rpx;
-  background-color: #fff;
 }
 
 .weui-cell_input {
@@ -110,7 +99,6 @@
 
 .btn_theme_black {
   border: 1px solid #d9d9d9 !important;
-  width: 90%;
   margin-top: 30rpx;
   background-color: #fff !important;
 }
