@@ -165,6 +165,12 @@
           "name": "查看DeeDao约贴",
           "pathName": "pages/post_invitation_share/post_invitation_share",
           "scene": "1048"
+        },
+        {
+          "id": 19,
+          "name": "腾讯地图",
+          "pathName": "pages/tencent_map/tencent_map",
+          "scene": "1048"
         }
 			]
 		}
