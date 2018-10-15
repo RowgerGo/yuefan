@@ -71,7 +71,7 @@
       </view>
     </view>
     <view class="weui-btn-area">
-      <button class="weui-btn btn_theme_red">加入Deedao好友</button>
+      <button class="weui-btn btn_theme_red" bindtap="openSelectFriends">加入Deedao好友</button>
         <button class="weui-btn btn_theme_red">加上我的名字</button>
     </view>
     <view class='header'>

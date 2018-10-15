@@ -18,7 +18,7 @@
                </view>
             </view>
             <view class="weui-form-preview__ft">
-                <view url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" bindtap='navigateTo_publish'>下一步</view>
+                <button url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" bindtap='navigateTo_publish'>下一步</button>
             </view>
         </view>
     </view>

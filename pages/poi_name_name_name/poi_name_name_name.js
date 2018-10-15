@@ -109,5 +109,10 @@ Page({
       url: "../../pages/index/index"
     })
   },
+  openSelectFriends: function () {
+    wx.navigateTo({
+      url: "../../pages/select_friends/select_friends"
+    })
+  },
 });
 
