@@ -7,14 +7,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    inputValue:'',
-    tempFilePaths:''
+    inputValue: '',
+    tempFilePaths: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
     console.log(this.data.inputValue)
     this.get_my_collect()
   },
@@ -22,50 +22,50 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-  
+  onReady: function() {
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-  
+  onShow: function() {
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
-  
+  onHide: function() {
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
-  
+  onUnload: function() {
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
-  
+  onPullDownRefresh: function() {
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
-  
+  onReachBottom: function() {
+
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-  
+  onShareAppMessage: function() {
+
   },
   get_my_collect: (type = 1) => {
     var reqData = {
@@ -77,24 +77,24 @@ Page({
       'Cookie': 'JSESSIONID=' + app.globalData.rongcloudtoken
     }
 
-    wechatUtil.http_post('/post/search/selectPostBySearch', reqData, function (s) {
+    wechatUtil.http_post('/post/search/selectPostBySearch', reqData, function(s) {
       console.log(s)
       // this.globalData.openid = s.data.openid 
       console.log('getApp().globalData.rongcloudtoken' + getApp().globalData.rongcloudtoken)
       console.log(s)
-    }, function (e) {
+    }, function(e) {
       console.log(e)
 
     }, header)
   },
-  navigateTo_selectTheme:function(){
-   
+  navigateTo_selectTheme: function() {
+
     wx.navigateTo({
       url: "../../pages/select_theme/select_theme"
     })
   },
-  upload_image:function(){
-    var _this=this
+  upload_image: function() {
+    var _this = this
     wx.chooseImage({
       count: 1,
       sizeType: ['original', 'compressed'],
@@ -109,25 +109,35 @@ Page({
       }
     })
   },
-  navigateTo_publish:function(){
-    wx.getStorage({
-      key: 'invatation_info',
-      success: function (res) {
-        console.log(res.data)
-        const data=res.data
-        data.theme_cover="1212"
-        data.theme_title = "1212"
+  navigateTo_publish: function() {
+    var _this = this
+    if (_this.data.tempFilePaths == "") {
+      wx.showToast({
+        title: '请确定主题和指定封面',
+        icon: 'none',
+        duration: 2000
+      })
+      return
+    } else {
+      wx.getStorage({
+        key: 'invatation_info',
+        success: function(res) {
+          console.log(res.data)
+          const data = res.data
+          data.theme_cover = _this.data.tempFilePaths
+          data.theme_title = _this.data.inputValue
 
+          wx.setStorage({ //存储到本地
+            key: "invatation_info",
+            data: data
+          })
+          wx.navigateTo({
+            url: "../../pages/post_invitation_publish/post_invitation_publish"
+          })
+        }
+      })
+    }
 
-        wx.setStorage({//存储到本地
-          key: "invatation_info",
-          data: data
-        })
-        wx.navigateTo({
-          url: "../../pages/pick_place/pick_place"
-        })
-      }
-    })
   }
 
 })

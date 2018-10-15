@@ -8,8 +8,8 @@
     <view class="place">地址栏</view>
     <view class="pick_place" bindtap="navigateTo_map">地址:{{address}}</view>
      <view class="button-sp-area">
-    <button class="weui-btn btn_theme_red" type="default" plain="true" bindtap="navigateTo_selectTheme">下一步</button>
-    <button class="weui-btn btn_theme_black" type="primary" plain="true">地点待定，下一步</button>
+    <button class="weui-btn btn_theme_red" type="default" data-type="1" plain="true" bindtap="navigateTo_selectTheme">下一步</button>
+    <button class="weui-btn btn_theme_black" type="primary" plain="true"  bindtap="navigateTo_selectTheme">地点待定，下一步</button>
     </view>
     </view>
 </view>

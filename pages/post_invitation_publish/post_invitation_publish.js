@@ -23,6 +23,7 @@ Page({
         _this.setData({
           date: res.data.date,
           time: res.data.time,
+          address: res.data.address,
           day: res.data.day,
           theme_title: res.data.theme_title,
           src: res.data.theme_cover

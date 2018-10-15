@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    address:''
+    address:'',
+    latitude: '',
+    longitude: ''
   },
 
   /**
@@ -68,16 +70,29 @@ Page({
       url: "../../pages/select_from_map/select_from_map"
     })
   },
-  navigateTo_selectTheme:function(type){
+  navigateTo_selectTheme:function(e){
     var _this = this
+    const type = e.currentTarget.dataset.type
     if(type==1){
 
       wx.getStorage({
         key: 'invatation_info',
         success: function (res) {
-          console.log(res.data)
+          const data = res.data
+          data.address = _this.data.address
+          data.latitude = _this.data.latitude
+          data.longitude = _this.data.longitude
+
+          wx.setStorage({//存储到本地
+            key: "invatation_info",
+            data: data
+          })
         }
       })
+      wx.navigateTo({
+        url: "../../pages/post_invitation/post_invitation"
+      })
+    }else{
       wx.navigateTo({
         url: "../../pages/post_invitation/post_invitation"
       })

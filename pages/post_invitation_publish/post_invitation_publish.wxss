@@ -110,3 +110,6 @@
   margin-top: 30rpx;
   background-color: #fff !important;
 }
+.theme_title{
+  width: 100%;
+}

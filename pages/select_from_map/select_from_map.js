@@ -167,6 +167,8 @@ Page({
     let prevPage = pages[pages.length - 2];//上一页面
     prevPage.setData({//直接给上移页面赋值
       address: this.data.address,
+      latitude: this.data.latitude,
+      longitude: this.data.longitude
     });
     wx.navigateBack({//返回
       delta: 1
