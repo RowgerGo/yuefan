@@ -142,7 +142,13 @@
 					"pathName": "pages/poi_name_name_name/poi_name_name_name",
 					"query": "scene=authorId,546",
 					"scene": "1048"
-				}
+				},
+        {
+          "id":17,
+          "name": "从地图中选择地点",
+          "pathName":"pages/select_from_map/select_from_map",
+          "scene": "1048"
+        }
 			]
 		}
 	}

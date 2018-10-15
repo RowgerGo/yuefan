@@ -109,6 +109,35 @@ class wechatUtil {
     }
     return relativePath
   }
+  transfer_date_to_day(date){
+    let Day = new Date(date).getDay()
+    switch (Day) {
+      case 1:
+        Day = "一"
+        break;
+      case 2:
+        Day = "二"
+        break;
+      case 3:
+        Day = "三"
+        break;
+      case 4:
+        Day = "四"
+        break;
+      case 5:
+        Day = "五"
+        break;
+      case 6:
+        Day = "六"
+        break;
+      case 7:
+        Day = "七"
+        break;
+      default:
+        Day = ""
+    }
+    return Day
+  }
   getTimestamp() {
     return Date.parse(new Date())
   }

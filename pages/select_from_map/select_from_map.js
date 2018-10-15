@@ -1,11 +1,41 @@
-// pages/pick_place/pick_place.js
+// pages/enter_map/enter_map.js
 Page({
 
   /**
-   * 页面的初始数据
+   * 页面的初始数据longitude="115.929465" latitude="28.68396"
    */
   data: {
-
+    inputShowed: false,
+    inputVal: "",
+    circles: [{
+      latitude: '28.68396',
+      longitude: '115.929465',
+      color: '#FF0000DD',
+      fillColor: '#DB628388',
+      radius: 3000,
+      strokeWidth: 1
+    }]
+  },
+  showInput: function () {
+    this.setData({
+      inputShowed: true
+    });
+  },
+  hideInput: function () {
+    this.setData({
+      inputVal: "",
+      inputShowed: false
+    });
+  },
+  clearInput: function () {
+    this.setData({
+      inputVal: ""
+    });
+  },
+  inputTyping: function (e) {
+    this.setData({
+      inputVal: e.detail.value
+    });
   },
 
   /**
@@ -62,10 +92,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  navigateTo_map:function(){
-    wx.navigateTo({
-      url: "../../pages/select_from_map/select_from_map"
-    })
   }
 })

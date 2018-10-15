@@ -1,4 +1,6 @@
 // pages/select_time/select_time.js
+const app = getApp()
+const wechatUtil = app.wechatUtil
 Page({
 
   /**
@@ -8,46 +10,43 @@ Page({
     date: "2018-09-21",
     time: "13:35",
     day: '',
-
+    is_select:false
   },
   bindDateChange: function (e) {
-    let Day = new Date(e.detail.value).getDay()
-    switch (Day) {
-      case 1:
-        Day = "一"
-        break;
-      case 2:
-        Day = "二"
-        break;
-      case 3:
-        Day = "三"
-        break;
-      case 4:
-        Day = "四"
-        break;
-      case 5:
-        Day = "五"
-        break;
-      case 6:
-        Day = "六"
-        break;
-      case 7:
-        Day = "七"
-        break;
-      default:
-        Day = ""
-    }
+    const day = wechatUtil.transfer_date_to_day(e.detail.value)
     this.setData({
       date: e.detail.value,
-      day: Day
+      day: day,
+      is_select:true
     })
   },
   bindTimeChange: function (e) {
+    const day = wechatUtil.transfer_date_to_day(this.data.date)
     this.setData({
-      time: e.detail.value
+      time: e.detail.value,
+      day: day,
+      is_select: true
     })
   },
   openPick_Place: function () {
+    if(!this.data.is_select){
+      wx.showToast({
+        title: '请选择时间',
+        icon: 'none',
+        duration: 2000
+      })
+      return
+    }
+    const info={
+      date: this.data.date,
+      time: this.data.time,
+      day: this.data.day
+    }
+    console.log(info)
+    wx.setStorage({//存储到本地
+      key: "invatation_info",
+      data: info
+    })
     wx.navigateTo({
       url: "../../pages/pick_place/pick_place"
     })
@@ -86,25 +85,7 @@ Page({
   onUnload: function () {
 
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  navigato_goback:function(){
+    wx.navigateBack({ changed: true });//返回上一页
   }
 })
