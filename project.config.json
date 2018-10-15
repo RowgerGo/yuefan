@@ -160,6 +160,11 @@
           "name": "我的饭局-发布邀请",
           "pathName": "pages/post_invitation_publish/post_invitation_publish",
           "scene": "1048"
+        },{
+          "id": 18,
+          "name": "查看DeeDao约贴",
+          "pathName": "pages/post_invitation_share/post_invitation_share",
+          "scene": "1048"
         }
 			]
 		}

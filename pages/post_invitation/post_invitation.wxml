@@ -14,7 +14,7 @@
             <view class="weui-form-preview__bd">
                <view class="select_cover" bindtap='upload_image'>
                  <text  hidden="{{tempFilePaths==''?false:true}}">点击指定请帖封面</text>
-                 <image class='theme_images' mode="aspectFit" hidden="{{tempFilePaths==''?true:false}}" src='{{tempFilePaths}}'></image>
+                 <image hidden="{{tempFilePaths==''?true:false}}"  class='theme_images' mode="aspectFit" src='{{tempFilePaths}}'></image>
                </view>
             </view>
             <view class="weui-form-preview__ft">

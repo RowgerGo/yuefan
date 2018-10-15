@@ -182,11 +182,17 @@ class wechatUtil {
       method:'POST',
       header: header,
       success(res) {
-        suc(res.data)
-        console.log(wx.getStorageSync("rongcloudtoken"))
+       
+        if (res.data.status==1001){
+          err(res.data)
+        } else if (res.data.status== 400){
+          err(res.data)
+        }else{
+          suc(res.data)
+        }
       },
-      fail: function () {
-        err("请求错误")
+      fail: function (e) {
+        err(e)
       }
     })
   }

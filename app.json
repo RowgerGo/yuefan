@@ -20,7 +20,8 @@
     "pages/poi_name_name_name/poi_name_name_name",
     "pages/select_from_map/select_from_map",
     "pages/select_from_switch/select_from_switch",
-    "pages/post_invitation_publish/post_invitation_publish"
+    "pages/post_invitation_publish/post_invitation_publish",
+    "pages/post_invitation_share/post_invitation_share"
   ],
   "window": {
     "backgroundTextStyle": "light",

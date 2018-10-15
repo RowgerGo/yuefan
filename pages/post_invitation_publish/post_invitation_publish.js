@@ -42,7 +42,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    console.log(app.globalData.address)
   },
 
   /**
@@ -133,7 +133,81 @@ Page({
       url: "../../pages/select_from_map/select_from_map?from=publish"
     })
   },
+  create_invatation:function(){
+
+  },
   onShareAppMessage: (res) => {
+    var reqData={}
+
+
+    wx.getStorage({
+      key: 'invatation_info',
+      success: function (res) {
+        reqData = {
+          createAddress: app.globalData.address,
+          createAddressLng: app.globalData.lng,
+          createAddressLat: app.globalData.lat,
+          sceneAddressLng: res.data.longitude, //非必传
+          sceneAddressLat: res.data.latitude,  //非必传
+          postSummary: res.data.theme_title,
+          status:1,
+        };
+
+        var header = {
+          'content-type': 'application/json', // 默认值
+          'Cookie': 'JSESSIONID=' + app.globalData.rongcloudtoken
+        }
+
+
+        wechatUtil.http_post('/post/savePost', reqData, function (s) {
+          wx.showToast({
+            title: '创建成功',
+            icon:'success',
+            success:function(){
+
+            }
+          })
+        }, function (e) {
+          wx.showToast({
+            title: e.msg,
+            icon: 'none',
+            success: function () {
+
+            }
+          })
+        }, header)
+
+
+      }
+    })
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+    //分享回调
     if (res.from === 'button') {
       console.log("来自页面内转发按钮");
       console.log(res.target);
@@ -142,8 +216,8 @@ Page({
       console.log("来自右上角转发菜单")
     }
     return {
-      title: '妹子图片',
-      path: '/pages/share/share?id=123',
+      title: '约饭',
+      path: '/pages/post_invitation_share/post_invitation_share?id=123',
       imageUrl: "/images/1.jpg",
       success: (res) => {
         console.log("转发成功", res);

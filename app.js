@@ -13,6 +13,8 @@ App({
     info:'测试2131'
   },
   onLaunch: function () {
+   
+
     //
     this.wechatUtil=new wechatUtil()
 
