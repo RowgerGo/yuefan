@@ -1,5 +1,5 @@
 <!--pages/game_tool/game_tool.wxml-->
-<view class="page">
+<view class="page index_class">
  <game_tool_header activeIndex='{{activeIndex}}'/>
   <view class="page_1">
     <view class="page__bd">
@@ -20,10 +20,9 @@
           </view>
           
           <view class="weui-tab__content  weui-tab__content_clear_height" hidden="{{activeIndex != 1}}">
-
+              <text class="tittle">近期饭局</text>
               <view   wx:for="{{my_postList}}" wx:key='index' wx:for-item="item">
-          <text class="tittle">近期饭局</text>
-                 <text id="{{index}}">{{JSON.stringify(my_postList)}}</text> <collect_item type="1" item="{{item}}"  />
+                 <collect_item type="1" item="{{item}}"  index="{{index}}"/>
               </view>
 
               

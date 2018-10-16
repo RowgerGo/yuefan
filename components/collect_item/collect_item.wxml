@@ -2,25 +2,25 @@
 <!--components/collect/collect.wxml-->
 
 <!--components/collect/collect.wxml-->
-<view class='weui-cells__item'>
+<view class="weui-cells__item collect_item">
   <view class="weui-cells__item">
     <view class="weui-panel weui-panel_access">
-      <view url="" class="weui-media-box weui-media-box_appmsg collect_item" hover-class="weui-cell_active">
-          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-            <image class="weui-media-box__thumb" src="{{item.postFirstPicture}}" />
-          </view>
-          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg collect_item_right">
-            <view class="top">{{item.id}}</view>
-            <view class="weui-media-box__desc">{{item.postSummary}}</view>
-            <view class="weui-media-box__desc">标题{{item.postSummary}}</view>
-          </view>
+      <view  class="weui-media-box weui-media-box_appmsg collect_item {{index==0?'first_item':''}}" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="{{item.postFirstPicture}}" />
         </view>
-       </view>
-        <view wx:if="{{type==1}}">
-         <view class="weui-form-preview__ft">
-    <view class='btn_style' hover-class='weui-form-preview__btn_active'>导航/拷贝POI</view>
-    <view class='btn_style_2' hover-class='weui-form-preview__btn_active'>一键加照片</view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg collect_item_right">
+          <view class="top">{{item.id}}</view>
+          <view class="weui-media-box__desc">{{item.postSummary}}</view>
+          <view class="weui-media-box__desc">标题{{item.postSummary}}</view>
         </view>
-        </view>
+      </view>
+    </view>
+    <view wx:if="{{type==1}}">
+      <view class="weui-form-preview__ft">
+        <view class='btn_style' hover-class='weui-form-preview__btn_active'>导航/拷贝POI</view>
+        <view class='btn_style_2' hover-class='weui-form-preview__btn_active'>{{index}}一键加照片</view>
+      </view>
+    </view>
   </view>
 </view>
