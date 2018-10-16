@@ -142,6 +142,14 @@ class wechatUtil {
     }
     return Day
   }
+  transfer_dateAndday_to_timestamp(date,time){
+    var t=date+" "+time+":00"
+    date = t.substring(0, 19);
+    date = date.replace(/-/g, '/'); 
+    var timestamp = new Date(date).getTime();
+
+    return timestamp
+  }
   getTimestamp() {
     return Date.parse(new Date())
   }

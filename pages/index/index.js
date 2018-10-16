@@ -125,7 +125,7 @@ Page({
       sortType:1,
       dataSources:1,
       type:1,
-      pageSize: 3,
+      pageSize: 30,
       pageStart:0,
       recursionFlg:1
     };

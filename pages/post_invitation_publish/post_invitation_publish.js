@@ -21,6 +21,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log('-------------pages/index/index')
     const postId = options.postId;
     if(postId){
      wx.showToast({
@@ -149,12 +150,12 @@ Page({
       success: function (res) {
         reqData = {
           authorId: app.globalData.myId,
-          sceneBuilding: '12313',
-          sceneAddress: '12313',
-          sceneTime: wechatUtil.formatTime3(new Date()),
+          sceneBuilding: res.data.poi_name,
+          sceneAddress: res.data.address,
+          sceneTime: wechatUtil.transfer_dateAndday_to_timestamp(res.data.date, res.data.time),
           sceneAddressLat: res.data.latitude,
           sceneAddressLng: res.data.longitude,
-          createBuilding: '12313',
+          createBuilding: app.globalData.address,
           createAddress: app.globalData.address,
           createAddressLat: app.globalData.lat,
           createAddressLng: app.globalData.lng,
@@ -182,7 +183,7 @@ Page({
           console.log('s.data.postId-------------:' + s.data.postId)
           return {
             title: '约饭' + s.data.postId,
-            path: 'pages/post_invitation_publish/post_invitation_publish?postId='+s.data.postId,
+            path: '/pages/post_invitation_publish/post_invitation_publish?postId='+s.data.postId,
             imageUrl: "/images/1.jpg",
             success: (res) => {
               console.log("转发成功", res);
