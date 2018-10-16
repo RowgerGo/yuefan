@@ -7,6 +7,14 @@
   text-align: left;
   vertical-align: top!important;
 }
+.time{
+  font-size: 22rpx;
+  color: #999999;
+}
+.top_time{
+  display: flex;
+  justify-content: space-between;
+}
 .btn_style,.btn_style_2{
   font-size: 30rpx;
   width: 50%;

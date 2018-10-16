@@ -15,7 +15,7 @@
         <view class="weui-tab__panel">
           
           <view class="weui-tab__content weui-tab__content_clear_height" hidden="{{activeIndex != 0}}">
-            <text>收藏列表</text>
+            <text class="tittle">最新收藏</text>
             <collect_item name="名称1" wx:for="{{items}}" type="0"/>
           </view>
           

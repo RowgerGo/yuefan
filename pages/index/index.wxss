@@ -4,9 +4,7 @@ pages/game_tool/game_tool.wxss
   background: #F8F8F8;
   height: 100vh;
   }
-  .index_class{
-    background: #F8F8F8!important; 
-  }
+
 .page__title{
    width:40x;
   height: 30px;
@@ -46,8 +44,11 @@ pages/game_tool/game_tool.wxss
   height: 40rpx;
 }
 .tittle{
-  border-bottom: 1px solid #b9b5b5;
+  font-size: 24rpx;
+  color: #999999;
   display: flex;
   text-align: left!important;
+  margin-left: 20px;
+  margin-top: 20px;
 
 }
