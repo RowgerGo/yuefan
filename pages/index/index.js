@@ -107,6 +107,7 @@ Page({
             console.log('-------------------' + s.data.openid)
             getApp().globalData.openid = s.data.openid
             getApp().globalData.myId = s.data.id
+            getApp().globalData.avatar = s.data.portraituri
             getApp().globalData.session_key = s.data.session_key
             getApp().globalData.rongcloudtoken = s.data.rongcloudtoken
             self.get_my_collect(1, s.data.rongcloudtoken,self)
@@ -125,7 +126,7 @@ Page({
       dataSources:1,
       type:1,
       pageSize: 3,
-      pageStart:1,
+      pageStart:0,
       recursionFlg:1
     };
     var header={

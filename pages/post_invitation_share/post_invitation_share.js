@@ -10,13 +10,26 @@ Page({
     day: '',
     countryCodes: ["+86", "+80", "+84", "+87"],
     countryCodeIndex: 0,
-    grids: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    grids: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    postId:''
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    const postId = options.postId;
+    if (postId) {
+      wx.showToast({
+        title: postId,
+        icon: 'none',
+        success: function () {
 
+        }
+      })
+      this.setData({
+        postId: postId
+      })
+    }  
   },
 
   /**

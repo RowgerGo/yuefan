@@ -13,7 +13,9 @@ Page({
     countryCodes: ["+86", "+80", "+84", "+87"],
     countryCodeIndex: 0,
     grids: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-    url_inputValue:''
+    url_inputValue:'',
+    author_name:'',
+    author_logo:''
   },
   /**
    * 生命周期函数--监听页面加载
@@ -21,7 +23,13 @@ Page({
   onLoad: function (options) {
     const postId = options.postId;
     if(postId){
-     
+     wx.showToast({
+       title: postId,
+       icon:'none',
+       success:function(){
+
+       }
+     })
     }   
 
 
@@ -39,7 +47,9 @@ Page({
           theme_title: res.data.theme_title,
           src: res.data.theme_cover,
           poi_name:res.data.poi_name,
-          url_inputValue: res.data.url_inputValue ? res.data.url_inputValue:''      
+          url_inputValue: res.data.url_inputValue ? res.data.url_inputValue:'',
+          author_name: app.globalData.nickname,
+          author_logo: app.globalData.avatar      
         })
       }
     })
@@ -151,7 +161,8 @@ Page({
           landAccountFlg: 1,
           postSummary: res.data.theme_title,
           postTypeId: 5,
-          status: 1
+          status: 1,
+          postFirstPicture: res.data.theme_cover[0]
         };
         var header = {
           'content-type': 'application/json', // 默认值
@@ -171,7 +182,7 @@ Page({
           console.log('s.data.postId-------------:' + s.data.postId)
           return {
             title: '约饭' + s.data.postId,
-            path: '/pages/post_invitation_share/post_invitation_share?postId='+s.data.postId,
+            path: 'pages/post_invitation_publish/post_invitation_publish?postId='+s.data.postId,
             imageUrl: "/images/1.jpg",
             success: (res) => {
               console.log("转发成功", res);
