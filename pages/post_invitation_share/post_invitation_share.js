@@ -181,13 +181,53 @@ Page({
     })
   },
   openIndex: function () {
-    wx.navigateTo({
+    wx.redirectTo({
       url: "../../pages/index/index"
     })
+  },
+  join:function(){
+    var self = this;
+    var reqData = {
+      postId: this.data.postId,
+      type: 3,
+      subType: 0,
+      length: 0,
+    };
+    var header = {
+      'content-type': 'application/json;charset=utf-8', // 默认值
+      'Cookie': 'JSESSIONID=' + app.globalData.rongcloudtoken
+    }
+
+    wechatUtil.http_post('/post/collection/changeWYYStatus', JSON.stringify(reqData), function (s) {
+      //console.log(s)
+      //this.globalData.openid = s.data.openid 
+      //console.log('getApp().globalData.rongcloudtoken' + getApp().globalData.rongcloudtoken)
+      console.log(s)
+      wx.showToast({
+        title: '加入成功',
+        icon:'success',
+        success:function(){
+          self.get_post_info(1, app.globalData.rongcloudtoken, self)
+        }
+      })
+    }, function (e) {
+      console.log(e)
+
+    }, header)
   },
   openSelectFriends: function () {
     wx.navigateTo({
       url: "../../pages/select_friends/select_friends"
+    })
+  },
+  mavigateTo_poiInfo:function(){
+    wx.navigateTo({
+      url: "../../pages/poi_infor/poi_infor?postId=" + this.data.postId
+    })
+  },
+  mavigateTo_index: function () {
+    wx.navigateTo({
+      url: "../../pages/index/index"
     })
   },
 });

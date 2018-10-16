@@ -20,11 +20,12 @@
           </view>
           
           <view class="weui-tab__content  weui-tab__content_clear_height" hidden="{{activeIndex != 1}}">
-           
+
               <view   wx:for="{{my_postList}}" wx:key='index' wx:for-item="item">
           <text class="tittle">近期饭局</text>
                  <text id="{{index}}">{{JSON.stringify(my_postList)}}</text> <collect_item type="1" item="{{item}}"  />
               </view>
+
               
                <view class="weui-cells weui-cells_after-title">
             <navigator url="../../pages/view_more/view_more" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
@@ -32,6 +33,7 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
             </navigator>
             </view>
+
 
           </view>
           <view class="weui-tab__content " hidden="{{activeIndex != 2}}">暂无数据</view>
