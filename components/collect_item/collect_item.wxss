@@ -6,5 +6,16 @@
   justify-content: space-between;
   text-align: left;
   vertical-align: top!important;
- 
+}
+.btn_style,.btn_style_2{
+  font-size: 30rpx;
+  width: 50%;
+  text-align: center;
+}
+.btn_style_2{
+  color: #db6283 !important;
+  border-left: 1px solid #DFDFDF;
+}
+.btn_style{
+  color: #999999;
 }

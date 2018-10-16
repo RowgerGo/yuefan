@@ -1,8 +1,6 @@
 <!--pages/view_more/view_more.wxml-->
 <view class="page">
-  <view class="page__hd">
-    <view class="page__title">查看更多</view>
-  </view>
+
   <view class="page__bd">
     <view class="weui-panel weui-panel_access">
       <view class="weui-panel__hd">收藏列表</view>

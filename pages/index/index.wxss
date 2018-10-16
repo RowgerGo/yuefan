@@ -36,3 +36,12 @@ pages/game_tool/game_tool.wxss
 .weui-tab__content_clear_height{
   padding-top: 0!important;
 }
+.weui-cell__bd{
+  color: #db6283;
+  font-size: 24rpx;
+  text-align: left!important;
+  height: 40rpx;
+}
+.tittle{
+  text-align: left!important;
+}
