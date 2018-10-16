@@ -7,7 +7,7 @@
   <view class="page_bd">
     <view class="date_time">日期/时间/星期</view>
     <view class="weui-cell__hd">
-      <view class="weui-label">日期</view>
+      <view class="weui-label">时间</view>
       <view class="weui-cell__bd input_date_time"> 
         <picker mode="date" value="{{date}}" start="2015-09-01 09:01" end="2022-09-01 21:01" bindchange="bindDateChange">
           <view class="weui-input">{{date}}</view>
