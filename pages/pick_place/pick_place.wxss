@@ -19,12 +19,13 @@
 
 .place {
   border-top: 1px solid#999999;
-  margin-top: 40px;
+  margin-top: 10px;
   width: 100%;
   display: flex;
   justify-content: center;
   color: #999;
   padding-top: 5px;
+  font-size: 12px;
 }
 
 .pick_place {

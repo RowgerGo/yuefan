@@ -5,9 +5,9 @@
         <view class="page__desc">确定聚会主题及邀请封面</view>
     </view>
     <view class="page__bd">
-        <view class="weui-form-preview">
+        <view class="theme_cover_line">
             <view class="theme_cover">主题及封面</view>
-            <view class="weui-form-preview__hd post_title" bindtap='navigateTo_selectTheme'>    
+            <view class="post_title " bindtap='navigateTo_selectTheme'>    
               <text class="post_title_item">主题</text>
               <text class="post_title_item_inputValue">{{inputValue}}</text>
             </view>
