@@ -3,22 +3,17 @@
 .page__hd {
   padding-left: 40px;
 }
-
 .page__title {
   text-align: left;
   font-size: 20px;
   font-weight: 400;
 }
-
 .page__desc {
   margin-top: 5px;
   color: #888;
   text-align: left;
   font-size: 12px;
 }
-
-
-
 .post_title {
   display: flex;
   margin-left: 15px;
@@ -27,13 +22,11 @@
   padding-bottom:5rpx; 
   font-size: 14px;
 }
-
 .post_title_item {
   width: 120px;
   text-align: left;
   font-size: 14px;
 }
-
 .post_title_item_inputValue {
   width: 100%;
   text-align: left;
