@@ -19,9 +19,12 @@
             <collect_item name="名称1" wx:for="{{items}}" />
           </view>
           <view class="weui-tab__content  weui-tab__content_clear_height" hidden="{{activeIndex != 1}}">
-            <collect_item name="{{item}}"   wx:for="{{items}}"/>
+               
+              <view   wx:for="{{my_postList}}" wx:key='index' wx:for-item="item">
+                 <text id="{{index}}">{{JSON.stringify(my_postList)}}</text> <collect_item item="{{item}}"  />
+              </view>
           </view>
-          <view class="weui-tab__content " hidden="{{activeIndex != 2}}">暂无数据333</view>
+          <view class="weui-tab__content " hidden="{{activeIndex != 2}}">暂无数据</view>
         </view>
       </view>
     </view>

@@ -3,16 +3,12 @@ var sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
 const app = getApp()
 const wechatUtil=app.wechatUtil
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     tabs: ["D贴收藏", "我的饭局", "游戏和工具"],
-    items: ['收藏1','收藏2'],
     activeIndex: 1,
     sliderOffset: 0,
     sliderLeft: 0,
+    my_postList:[]
   },
 
   /**
@@ -35,7 +31,7 @@ Page({
         });
       }
     });
-    this._login()
+   
   },
 
   /**
@@ -50,7 +46,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    this._login()
   },
 
   /**
@@ -110,10 +106,10 @@ Page({
             wx.setStorageSync('rongcloudtoken', s.data.rongcloudtoken);
             console.log('-------------------' + s.data.openid)
             getApp().globalData.openid = s.data.openid
-            getApp().globalData.id = s.data.id
+            getApp().globalData.myId = s.data.id
             getApp().globalData.session_key = s.data.session_key
             getApp().globalData.rongcloudtoken = s.data.rongcloudtoken
-            self.get_my_collect(1, s.data.rongcloudtoken)
+            self.get_my_collect(1, s.data.rongcloudtoken,self)
           }, function (e) {
             console.log(e)
           })
@@ -122,12 +118,13 @@ Page({
       }
     })
   },
-  get_my_collect: (type = 1, rongcloudtoken)=>{
+  get_my_collect: (type = 1, rongcloudtoken, self)=>{
+    var self = self;
     var reqData = {
       sortType:1,
-      dataSources:2,
+      dataSources:1,
       type:1,
-      pageSize: 5,
+      pageSize: 3,
       pageStart:1,
       recursionFlg:1
     };
@@ -138,9 +135,14 @@ Page({
   
     wechatUtil.http_post('/post/search/selectPostBySearch', JSON.stringify(reqData), function (s) {
       //console.log(s)
-      // this.globalData.openid = s.data.openid 
+      //this.globalData.openid = s.data.openid 
       //console.log('getApp().globalData.rongcloudtoken' + getApp().globalData.rongcloudtoken)
-      //console.log(s)
+      console.log(s)
+      if(type=1){
+        self.setData({
+          my_postList:s.data
+        })
+      }
     }, function (e) {
       console.log(e)
   

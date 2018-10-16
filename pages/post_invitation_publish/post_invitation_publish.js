@@ -19,6 +19,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    const postId = options.postId;
+    if(postId){
+     
+    }   
+
+
+
     var _this=this
     wx.getStorage({
       key: 'invatation_info',
@@ -32,7 +39,7 @@ Page({
           theme_title: res.data.theme_title,
           src: res.data.theme_cover,
           poi_name:res.data.poi_name,
-          url_inputValue: res.data.url_inputValue         
+          url_inputValue: res.data.url_inputValue ? res.data.url_inputValue:''      
         })
       }
     })
@@ -49,7 +56,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+   
   },
 
   /**
@@ -73,12 +80,6 @@ Page({
     })
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
@@ -91,13 +92,6 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
 
   },
   bindKeyInput: function (e) {
@@ -136,7 +130,7 @@ Page({
   create_invatation:function(){
 
   },
-  onShareAppMessage: (res) => {
+  onShareAppMessage: (shareRes) => {
     var reqData={}
 
 
@@ -144,15 +138,21 @@ Page({
       key: 'invatation_info',
       success: function (res) {
         reqData = {
+          authorId: app.globalData.myId,
+          sceneBuilding: '12313',
+          sceneAddress: '12313',
+          sceneTime: wechatUtil.formatTime3(new Date()),
+          sceneAddressLat: res.data.latitude,
+          sceneAddressLng: res.data.longitude,
+          createBuilding: '12313',
           createAddress: app.globalData.address,
-          createAddressLng: app.globalData.lng,
           createAddressLat: app.globalData.lat,
-          sceneAddressLng: res.data.longitude, //非必传
-          sceneAddressLat: res.data.latitude,  //非必传
+          createAddressLng: app.globalData.lng,
+          landAccountFlg: 1,
           postSummary: res.data.theme_title,
-          status:1,
+          postTypeId: 5,
+          status: 1
         };
-
         var header = {
           'content-type': 'application/json', // 默认值
           'Cookie': 'JSESSIONID=' + app.globalData.rongcloudtoken
@@ -160,13 +160,26 @@ Page({
 
 
         wechatUtil.http_post('/post/savePost', reqData, function (s) {
-          wx.showToast({
-            title: '创建成功',
-            icon:'success',
-            success:function(){
-
+          //分享回调
+          if (shareRes.from === 'button') {
+            console.log("来自页面内转发按钮");
+            console.log(shareRes.target);
+          }
+          else {
+            console.log("来自右上角转发菜单")
+          }
+          console.log('s.data.postId-------------:' + s.data.postId)
+          return {
+            title: '约饭' + s.data.postId,
+            path: '/pages/post_invitation_share/post_invitation_share?postId='+s.data.postId,
+            imageUrl: "/images/1.jpg",
+            success: (res) => {
+              console.log("转发成功", res);
+            },
+            fail: (res) => {
+              console.log("转发失败", res);
             }
-          })
+          }
         }, function (e) {
           wx.showToast({
             title: e.msg,
@@ -181,51 +194,7 @@ Page({
       }
     })
 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-    //分享回调
-    if (res.from === 'button') {
-      console.log("来自页面内转发按钮");
-      console.log(res.target);
-    }
-    else {
-      console.log("来自右上角转发菜单")
-    }
-    return {
-      title: '约饭',
-      path: '/pages/post_invitation_share/post_invitation_share?id=123',
-      imageUrl: "/images/1.jpg",
-      success: (res) => {
-        console.log("转发成功", res);
-      },
-      fail: (res) => {
-        console.log("转发失败", res);
-      }
-    }
+   
   }
 });
 
