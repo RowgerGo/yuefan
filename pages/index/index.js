@@ -38,7 +38,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-   
+    this._login()
     
   },
 
@@ -46,7 +46,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this._login()
+   
   },
 
   /**
@@ -83,12 +83,20 @@ Page({
   onShareAppMessage: function () {
 
   },
+   /**
+   * 页面相关事件处理函数--监听tab切换
+   */
   tabClick: function (e) {
+    console.log(e.currentTarget.id)
     this.setData({
       sliderOffset: e.currentTarget.offsetLeft,
       activeIndex: e.currentTarget.id
     });
+    this.get_my_collect(e.currentTarget.id, getApp().globalData.rongcloudtoken,this)
   },
+   /**
+   * 页面相关事件处理函数--登录方法
+   */
   _login: function(){
     var _this=this
     var self = this;
@@ -119,11 +127,20 @@ Page({
       }
     })
   },
+  /**
+   * 页面相关事件处理函数--获取首页列表数据
+   * type分别传入0,1,2
+   * rongcloudtoken是登录票据 getApp().globalData.rongcloudtoken
+   * self 为this
+   */
   get_my_collect: (type = 1, rongcloudtoken, self)=>{
+
+
+
     var self = self;
     var reqData = {
       sortType:1,
-      dataSources:1,
+      dataSources: type == 0 ? 2 : 1,
       type:1,
       pageSize: 30,
       pageStart:0,
@@ -139,11 +156,11 @@ Page({
       //this.globalData.openid = s.data.openid 
       //console.log('getApp().globalData.rongcloudtoken' + getApp().globalData.rongcloudtoken)
       console.log(s)
-      if(type=1){
+      
         self.setData({
           my_postList:s.data
         })
-      }
+
     }, function (e) {
       console.log(e)
   

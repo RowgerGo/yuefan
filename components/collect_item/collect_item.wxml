@@ -5,14 +5,14 @@
 <view class="weui-cells__item collect_item">
   <view class="weui-cells__item">
     <view class="weui-panel weui-panel_access">
-      <view  class="weui-media-box weui-media-box_appmsg collect_item {{index==0?'first_item':''}}" hover-class="weui-cell_active">
+      <view  class="weui-media-box weui-media-box_appmsg collect_item {{index==0?'first_item':''}}" hover-class="weui-cell_active" bindtap='navigateTo_details' data-type="{{type}}" data-postid="{{item.id}}">
         <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
           <image class="weui-media-box__thumb" src="{{item.postFirstPicture}}" />
         </view>
         <view class="weui-media-box__bd weui-media-box__bd_in-appmsg collect_item_right">
           <view class="top_time">
           <view class="top">{{item.id}}</view>
-          <view class="time" wx:if="{{activeIndex}}==1}}"> 2018年9月17日 20:00 星期一</view>
+          <view class="time"  wx:if="{{type==1}}"> 2018年9月17日 20:00 星期一</view>
           </view>
           <view class="weui-media-box__desc">{{item.postSummary}}</view>
           <view class="weui-media-box__desc">标题{{item.postSummary}}</view>

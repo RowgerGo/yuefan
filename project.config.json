@@ -181,8 +181,15 @@
         },
         {
           "id": 21,
-          "name": "互动-浏览照片",
+          "name": "分享进入-互动-浏览照片",
           "pathName": "pages/interaction_scan_image/interaction_scan_image",
+          "scene": "1048"
+        }
+        ,
+        {
+          "id": 21,
+          "name": "发布后作者互动",
+          "pathName": "pages/post_invitation_selfDetails/post_invitation_selfDetails",
           "scene": "1048"
         }
       ]

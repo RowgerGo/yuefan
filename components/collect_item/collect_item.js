@@ -29,6 +29,14 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    navigateTo_details:function(e){
+      const id = e.currentTarget.dataset.postid
+      const type = e.currentTarget.dataset.type
+      if(type==1){
+        wx.navigateTo({
+          url: "../../pages/post_invitation_selfDetails/post_invitation_selfDetails?postId=" + id
+        })
+      }
+    }
   }
 })

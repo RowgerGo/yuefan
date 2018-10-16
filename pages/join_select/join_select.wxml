@@ -4,9 +4,9 @@
     <view class="page__desc">请选择您加入后的状态，默认为待定</view>
   </view>
   <view class="button-sp-area">
-    <button class="weui-btn btn_theme_red" type="primary" plain="true">确定参加</button>
-    <button class="weui-btn btn_theme_red" type="primary" plain="true">场外支持</button>
-    <button class="weui-btn btn_theme_red" type="primary" plain="true">待定</button>
-    <button class="weui-btn btn_theme_red btn_login_out" bindtap='NavigateToIndex' type="primary" plain="true">退出参与</button>
+    <button class="weui-btn btn_theme_red" type="primary" data-type='1' data-title='确定参加'  bindtap='join_select' plain="true">确定参加</button>
+    <button class="weui-btn btn_theme_red" type="primary" data-type='2' data-title='场外支持'  bindtap='join_select'  plain="true">场外支持</button>
+    <button class="weui-btn btn_theme_red" type="primary" data-type='3' data-title='待定' bindtap='join_select'  plain="true">待定</button>
+    <button class="weui-btn btn_theme_red btn_login_out" data-type='4' bindtap='join_select' data-title='退出参与'  type="primary" plain="true">退出参与</button>
   </view>
 </view>
