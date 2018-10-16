@@ -1,185 +1,191 @@
 {
-	"description": "项目配置文件。",
-	"packOptions": {
-		"ignore": []
-	},
-	"setting": {
-		"urlCheck": false,
-		"es6": true,
-		"postcss": true,
-		"minified": true,
-		"newFeature": true
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.3.0",
-	"appid": "wx5765078c1f5bb0f6",
-	"projectname": "yuefan",
-	"isGameTourist": false,
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"currentL": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": -1,
-			"list": [
-				{
-					"id": 0,
-					"name": "首页",
-					"pathName": "pages/index/index",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 0,
-					"name": "参与选项",
-					"pathName": "pages/join_select/join_select",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 1,
-					"name": "发布邀请-定主题",
-					"pathName": "pages/post_invitation/post_invitation",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 2,
-					"name": "添加图片",
-					"pathName": "pages/add_pictures/add_pictures",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 4,
-					"name": "选择好友",
-					"pathName": "pages/select_friends/select_friends",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 5,
-					"name": "查看更多",
-					"pathName": "pages/view_more/view_more",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 6,
-					"name": "你收藏了***的帖子",
-					"pathName": "pages/collect_posts/collect_posts",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 7,
-					"name": "POI名字",
-					"pathName": "pages/poi_name/poi_name",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 8,
-					"name": "选择主题",
-					"pathName": "pages/select_theme/select_theme",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 9,
-					"name": "选时间",
-					"pathName": "pages/select_time/select_time",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 11,
-					"name": "图片作者",
-					"pathName": "pages/photo_author/photo_author",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 12,
-					"name": "管理参与者",
-					"pathName": "pages/manage_join/manage_join",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 13,
-					"name": "定地点",
-					"pathName": "pages/pick_place/pick_place",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 14,
-					"name": "选择相册封面",
-					"pathName": "pages/select_cover/select_cover",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 15,
-					"name": "进入地图",
-					"pathName": "pages/enter_map/enter_map",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 16,
-					"name": "POI名字3",
-					"pathName": "pages/poi_name_name_name/poi_name_name_name",
-					"query": "scene=authorId,546",
-					"scene": "1048"
-				},
-				{
-					"id": 17,
-					"name": "从地图中选择地点",
-					"pathName": "pages/select_from_map/select_from_map",
-					"scene": "1048"
-				},
-				{
-					"id": 17,
-					"name": "从城市切换中选择地点",
-					"pathName": "pages/select_from_switch/select_from_switch",
-					"scene": "1048"
-				},
-				{
-					"id": 17,
-					"name": "我的饭局-发布邀请",
-					"pathName": "pages/post_invitation_publish/post_invitation_publish",
-					"scene": "1048"
-				},
-				{
-					"id": 18,
-					"name": "查看DeeDao约贴",
-					"pathName": "pages/post_invitation_share/post_invitation_share",
-					"scene": "1048"
-				},
-				{
-					"id": 19,
-					"name": "腾讯地图",
-					"pathName": "pages/tencent_map/tencent_map",
-					"scene": "1048"
-				},
-				{
-					"id": 20,
-					"name": "POI信息页",
-					"pathName": "pages/poi_infor/poi_infor",
-					"scene": "1048"
-				}
-			]
-		}
-	}
+  "description": "项目配置文件。",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.3.0",
+  "appid": "wx5765078c1f5bb0f6",
+  "projectname": "yuefan",
+  "isGameTourist": false,
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": [
+        {
+          "id": 0,
+          "name": "首页",
+          "pathName": "pages/index/index",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 0,
+          "name": "参与选项",
+          "pathName": "pages/join_select/join_select",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 1,
+          "name": "发布邀请-定主题",
+          "pathName": "pages/post_invitation/post_invitation",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 2,
+          "name": "添加图片",
+          "pathName": "pages/add_pictures/add_pictures",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 4,
+          "name": "选择好友",
+          "pathName": "pages/select_friends/select_friends",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 5,
+          "name": "查看更多",
+          "pathName": "pages/view_more/view_more",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 6,
+          "name": "你收藏了***的帖子",
+          "pathName": "pages/collect_posts/collect_posts",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 7,
+          "name": "POI名字",
+          "pathName": "pages/poi_name/poi_name",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 8,
+          "name": "选择主题",
+          "pathName": "pages/select_theme/select_theme",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 9,
+          "name": "选时间",
+          "pathName": "pages/select_time/select_time",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 11,
+          "name": "图片作者",
+          "pathName": "pages/photo_author/photo_author",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 12,
+          "name": "管理参与者",
+          "pathName": "pages/manage_join/manage_join",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 13,
+          "name": "定地点",
+          "pathName": "pages/pick_place/pick_place",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 14,
+          "name": "选择相册封面",
+          "pathName": "pages/select_cover/select_cover",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 15,
+          "name": "进入地图",
+          "pathName": "pages/enter_map/enter_map",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 16,
+          "name": "POI名字3",
+          "pathName": "pages/poi_name_name_name/poi_name_name_name",
+          "query": "scene=authorId,546",
+          "scene": "1048"
+        },
+        {
+          "id": 17,
+          "name": "从地图中选择地点",
+          "pathName": "pages/select_from_map/select_from_map",
+          "scene": "1048"
+        },
+        {
+          "id": 17,
+          "name": "从城市切换中选择地点",
+          "pathName": "pages/select_from_switch/select_from_switch",
+          "scene": "1048"
+        },
+        {
+          "id": 17,
+          "name": "我的饭局-发布邀请",
+          "pathName": "pages/post_invitation_publish/post_invitation_publish",
+          "scene": "1048"
+        },
+        {
+          "id": 18,
+          "name": "查看DeeDao约贴",
+          "pathName": "pages/post_invitation_share/post_invitation_share",
+          "scene": "1048"
+        },
+        {
+          "id": 19,
+          "name": "腾讯地图",
+          "pathName": "pages/tencent_map/tencent_map",
+          "scene": "1048"
+        },
+        {
+          "id": 20,
+          "name": "POI信息页",
+          "pathName": "pages/poi_infor/poi_infor",
+          "scene": "1048"
+        },
+        {
+          "id": 21,
+          "name": "互动-浏览照片",
+          "pathName": "pages/interaction_scan_image/interaction_scan_image",
+          "scene": "1048"
+        }
+      ]
+    }
+  }
 }

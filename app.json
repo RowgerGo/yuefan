@@ -23,7 +23,8 @@
     "pages/post_invitation_publish/post_invitation_publish",
     "pages/post_invitation_share/post_invitation_share",
     "pages/tencent_map/tencent_map",
-    "pages/poi_infor/poi_infor"
+    "pages/poi_infor/poi_infor",
+    "pages/interaction_scan_image/interaction_scan_image"
   ],
   "window": {
     "backgroundTextStyle": "light",
