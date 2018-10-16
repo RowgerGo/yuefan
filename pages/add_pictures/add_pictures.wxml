@@ -53,6 +53,5 @@
   <button class="weui-btn" type="default" plain="true">返回请帖页</button>
 </view>
 <view class="button-sp-area_1">
-  <button class="weui-btn btn_theme" type="default" plain="true">分享给微信群或好友</button>
-  <button class="weui-btn btn_theme_red" type="default" plain="true">分享给微信群或好友</button>
+<button class="weui-btn btn_theme_red" type="default" plain="true">分享给微信群或好友</button>
 </view>

@@ -11,5 +11,9 @@
     <button class="weui-btn btn_theme_red" type="default" data-type="1" plain="true" bindtap="navigateTo_selectTheme">下一步</button>
     <button class="weui-btn btn_theme_black" type="primary" plain="true"  bindtap="navigateTo_selectTheme">地点待定，下一步</button>
     </view>
+    <view class="weui-footer">
+    <navigator url="../../pages/select_time/select_time" class="weui-footer__link">上一步</navigator>
+    <view class="weui-footer__text">Copyright © 2017-2018 Deedao.com</view>
+  </view>
     </view>
 </view>

@@ -54,3 +54,9 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+.weui-footer__link{
+   color: #db6283;
+    font-size: 30rpx;
+   margin-top: 30px;
+    text-align: center;
+  }

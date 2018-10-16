@@ -20,6 +20,10 @@
             <view class="weui-form-preview__ft">
                 <button url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" bindtap='navigateTo_publish'>下一步</button>
             </view>
+              <view class="weui-footer">
+    <navigator url="../../pages/pick_place/pick_place" class="weui-footer__link">上一步</navigator>
+    <view class="weui-footer__text">Copyright © 2017-2018 Deedao.com</view>
+  </view>
         </view>
     </view>
 </view>

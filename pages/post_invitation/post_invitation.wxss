@@ -67,8 +67,14 @@
 
 .weui-form-preview__btn_primary {
   color: white !important;
-  border: 1px solid #db6283 !important;
-  margin-top: 30rpx;
+  margin-top: 50rpx;
   background-color: #db6283 !important;
-  margin-bottom:40rpx;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+.weui-footer__link{
+   color: #db6283;
+    font-size: 30rpx;
+   margin-top: 30px;
+    text-align: center;
+  }
